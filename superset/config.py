@@ -196,6 +196,7 @@ SQLALCHEMY_DATABASE_URI = (
 
 # SQLALCHEMY_DATABASE_URI = 'mysql://myapp@localhost/myapp'
 # SQLALCHEMY_DATABASE_URI = 'postgresql://root:password@localhost/myapp'
+# SQLALCHEMY_DATABASE_URI = 'mysql://myapp@localhost/myapp'
 
 # This config is exposed through flask-sqlalchemy, and can be used to set your metadata
 # database connection settings. You can use this to set arbitrary connection settings
@@ -284,7 +285,8 @@ SHOW_STACKTRACE = False
 # Use all X-Forwarded headers when ENABLE_PROXY_FIX is True.
 # When proxying to a different port, set "x_port" to 0 to avoid downstream issues.
 ENABLE_PROXY_FIX = False
-PROXY_FIX_CONFIG = {"x_for": 1, "x_proto": 1, "x_host": 1, "x_port": 1, "x_prefix": 1}
+PROXY_FIX_CONFIG = {"x_for": 1, "x_proto": 1,
+                    "x_host": 1, "x_port": 1, "x_prefix": 1}
 
 # Configuration for scheduling queries from SQL Lab.
 SCHEDULED_QUERIES: dict[str, Any] = {}
@@ -307,10 +309,10 @@ AUTH_RATE_LIMIT = "5 per second"
 # GLOBALS FOR APP Builder
 # ------------------------------
 # Uncomment to setup Your App name
-APP_NAME = "Superset"
+APP_NAME = os.environ.get("PROJECT_NAME")
 
 # Specify the App icon
-APP_ICON = "/static/assets/images/superset-logo-horiz.png"
+APP_ICON = "/static/assets/images/bma-logo-horiz.png"
 
 # Specify where clicking the logo would take the user'
 # Default value of None will take you to '/superset/welcome'
@@ -319,7 +321,7 @@ APP_ICON = "/static/assets/images/superset-logo-horiz.png"
 LOGO_TARGET_PATH = None
 
 # Specify tooltip that should appear when hovering over the App Icon/Logo
-LOGO_TOOLTIP = ""
+LOGO_TOOLTIP = APP_NAME
 
 # Specify any text that should appear to the right of the logo
 LOGO_RIGHT_TEXT: Callable[[], str] | str = ""
@@ -590,14 +592,18 @@ SSH_TUNNEL_PACKET_TIMEOUT_SEC = 1.0
 # Feature flags may also be set via 'SUPERSET_FEATURE_' prefixed environment vars.
 DEFAULT_FEATURE_FLAGS.update(
     {
-        k[len("SUPERSET_FEATURE_") :]: parse_boolean_string(v)
+        k[len("SUPERSET_FEATURE_"):]: parse_boolean_string(v)
         for k, v in os.environ.items()
         if re.search(r"^SUPERSET_FEATURE_\w+", k)
     }
 )
 
 # This is merely a default.
-FEATURE_FLAGS: dict[str, bool] = {}
+FEATURE_FLAGS: dict[str, bool] = {
+    "ENABLE_JAVASCRIPT_CONTROLS": True,
+    "ALLOW_JS_CUSTOM_VIZ": True,
+    "ENABLE_EXPLORE_JSON": True
+}
 
 # A function that receives a dict of all feature flags
 # (DEFAULT_FEATURE_FLAGS merged with FEATURE_FLAGS)
@@ -613,7 +619,8 @@ FEATURE_FLAGS: dict[str, bool] = {}
 #     if hasattr(g, "user") and g.user.is_active:
 #         feature_flags_dict['some_feature'] = g.user and g.user.get_id() == 5
 #     return feature_flags_dict
-GET_FEATURE_FLAGS_FUNC: Callable[[dict[str, bool]], dict[str, bool]] | None = None
+GET_FEATURE_FLAGS_FUNC: Callable[[
+    dict[str, bool]], dict[str, bool]] | None = None
 # A function that receives a feature flag name and an optional default value.
 # Has a similar utility to GET_FEATURE_FLAGS_FUNC but it's useful to not force the
 # evaluation of all feature flags when just evaluating a single one.
@@ -712,7 +719,8 @@ THUMBNAIL_EXECUTE_AS = [ExecutorType.CURRENT_USER, ExecutorType.SELENIUM]
 THUMBNAIL_DASHBOARD_DIGEST_FUNC: (
     None | (Callable[[Dashboard, ExecutorType, str], str])
 ) = None
-THUMBNAIL_CHART_DIGEST_FUNC: Callable[[Slice, ExecutorType, str], str] | None = None
+THUMBNAIL_CHART_DIGEST_FUNC: Callable[[
+    Slice, ExecutorType, str], str] | None = None
 
 THUMBNAIL_CACHE_CONFIG: CacheConfig = {
     "CACHE_TYPE": "NullCache",
@@ -842,7 +850,7 @@ COLUMNAR_EXTENSIONS = {"parquet", "zip"}
 ALLOWED_EXTENSIONS = {*EXCEL_EXTENSIONS, *CSV_EXTENSIONS, *COLUMNAR_EXTENSIONS}
 
 # Optional maximum file size in bytes when uploading a CSV
-CSV_UPLOAD_MAX_SIZE = None
+CSV_UPLOAD_MAX_SIZE = 1024 * 1024 * 1024
 
 # CSV Options: key/value pairs that will be passed as argument to DataFrame.to_csv
 # method.
@@ -1254,7 +1262,7 @@ BLUEPRINTS: list[Blueprint] = []
 #       lambda url, query: url if is_fresh(query) else None
 #   )
 # pylint: disable-next=unnecessary-lambda-assignment
-TRACKING_URL_TRANSFORMER = lambda url: url  # noqa: E731
+def TRACKING_URL_TRANSFORMER(url): return url  # noqa: E731
 
 
 # customize the polling time of each engine
@@ -1415,7 +1423,8 @@ ALERT_REPORTS_EXECUTE_AS: list[ExecutorType] = [ExecutorType.OWNER]
 ALERT_REPORTS_WORKING_TIME_OUT_LAG = int(timedelta(seconds=10).total_seconds())
 # if ALERT_REPORTS_WORKING_TIME_OUT_KILL is True, set a celery hard timeout
 # Equal to working timeout + ALERT_REPORTS_WORKING_SOFT_TIME_OUT_LAG
-ALERT_REPORTS_WORKING_SOFT_TIME_OUT_LAG = int(timedelta(seconds=1).total_seconds())
+ALERT_REPORTS_WORKING_SOFT_TIME_OUT_LAG = int(
+    timedelta(seconds=1).total_seconds())
 # Default values that user using when creating alert
 ALERT_REPORTS_DEFAULT_WORKING_TIMEOUT = 3600
 ALERT_REPORTS_DEFAULT_RETENTION = 90
@@ -1556,7 +1565,8 @@ DATABASE_OAUTH2_TIMEOUT = timedelta(seconds=30)
 CONTENT_SECURITY_POLICY_WARNING = True
 
 # Do you want Talisman enabled?
-TALISMAN_ENABLED = utils.cast_to_boolean(os.environ.get("TALISMAN_ENABLED", True))
+TALISMAN_ENABLED = utils.cast_to_boolean(
+    os.environ.get("TALISMAN_ENABLED", True))
 
 # If you want Talisman, how do you want it configured??
 TALISMAN_CONFIG = {
@@ -1677,7 +1687,9 @@ SSL_CERT_PATH: str | None = None
 # conventions and such. You can find examples in the tests.
 
 # pylint: disable-next=unnecessary-lambda-assignment
-SQLA_TABLE_MUTATOR = lambda table: table  # noqa: E731
+
+
+def SQLA_TABLE_MUTATOR(table): return table  # noqa: E731
 
 
 # Global async query config options.
@@ -1871,7 +1883,8 @@ if CONFIG_PATH_ENV_VAR in os.environ:
             if key.isupper():
                 setattr(module, key, getattr(override_conf, key))
 
-        click.secho(f"Loaded your LOCAL configuration at [{cfg_path}]", fg="cyan")
+        click.secho(
+            f"Loaded your LOCAL configuration at [{cfg_path}]", fg="cyan")
     except Exception:
         logger.exception(
             "Failed to import config for %s=%s", CONFIG_PATH_ENV_VAR, cfg_path

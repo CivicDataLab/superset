@@ -75,7 +75,8 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         self.config = app.config
         self.manifest: dict[Any, Any] = {}
 
-    @deprecated(details="use self.superset_app instead of self.flask_app")  # type: ignore
+    # type: ignore
+    @deprecated(details="use self.superset_app instead of self.flask_app")
     @property
     def flask_app(self) -> SupersetApp:
         return self.superset_app
@@ -237,39 +238,39 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
             cond=lambda: bool(appbuilder.app.config["LOGO_TARGET_PATH"]),
         )
 
-        appbuilder.add_view(
-            DatabaseView,
-            "Databases",
-            label=__("Database Connections"),
-            icon="fa-database",
-            category="Data",
-            category_label=__("Data"),
-        )
-        appbuilder.add_view(
-            DashboardModelView,
-            "Dashboards",
-            label=__("Dashboards"),
-            icon="fa-dashboard",
-            category="",
-            category_icon="",
-        )
-        appbuilder.add_view(
-            SliceModelView,
-            "Charts",
-            label=__("Charts"),
-            icon="fa-bar-chart",
-            category="",
-            category_icon="",
-        )
+        # appbuilder.add_view(
+        #     DatabaseView,
+        #     "Databases",
+        #     label=__("Database Connections"),
+        #     icon="fa-database",
+        #     category="Data",
+        #     category_label=__("Data"),
+        # )
+        # appbuilder.add_view(
+        #     DashboardModelView,
+        #     "Dashboards",
+        #     label=__("Dashboards"),
+        #     icon="fa-dashboard",
+        #     category="",
+        #     category_icon="",
+        # )
+        # appbuilder.add_view(
+        #     SliceModelView,
+        #     "Charts",
+        #     label=__("Charts"),
+        #     icon="fa-bar-chart",
+        #     category="",
+        #     category_icon="",
+        # )
 
-        appbuilder.add_link(
-            "Datasets",
-            label=__("Datasets"),
-            href="/tablemodelview/list/",
-            icon="fa-table",
-            category="",
-            category_icon="",
-        )
+        # appbuilder.add_link(
+        #     "Datasets",
+        #     label=__("Datasets"),
+        #     href="/tablemodelview/list/",
+        #     icon="fa-table",
+        #     category="",
+        #     category_icon="",
+        # )
 
         appbuilder.add_view(
             DynamicPluginsView,
@@ -322,32 +323,32 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         #
         # Add links
         #
-        appbuilder.add_link(
-            "SQL Editor",
-            label=__("SQL Lab"),
-            href="/sqllab/",
-            category_icon="fa-flask",
-            icon="fa-flask",
-            category="SQL Lab",
-            category_label=__("SQL"),
-        )
-        appbuilder.add_link(
-            "Saved Queries",
-            label=__("Saved Queries"),
-            href="/savedqueryview/list/",
-            icon="fa-save",
-            category="SQL Lab",
-            category_label=__("SQL"),
-        )
-        appbuilder.add_link(
-            "Query Search",
-            label=__("Query History"),
-            href="/sqllab/history/",
-            icon="fa-search",
-            category_icon="fa-flask",
-            category="SQL Lab",
-            category_label=__("SQL Lab"),
-        )
+        # appbuilder.add_link(
+        #     "SQL Editor",
+        #     label=__("SQL Lab"),
+        #     href="/sqllab/",
+        #     category_icon="fa-flask",
+        #     icon="fa-flask",
+        #     category="SQL Lab",
+        #     category_label=__("SQL"),
+        # )
+        # appbuilder.add_link(
+        #     "Saved Queries",
+        #     label=__("Saved Queries"),
+        #     href="/savedqueryview/list/",
+        #     icon="fa-save",
+        #     category="SQL Lab",
+        #     category_label=__("SQL"),
+        # )
+        # appbuilder.add_link(
+        #     "Query Search",
+        #     label=__("Query History"),
+        #     href="/sqllab/history/",
+        #     icon="fa-search",
+        #     category_icon="fa-flask",
+        #     category="SQL Lab",
+        #     category_label=__("SQL Lab"),
+        # )
         appbuilder.add_view(
             TagModelView,
             "Tags",
@@ -355,7 +356,8 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
             icon="",
             category_icon="",
             category="Manage",
-            menu_cond=lambda: feature_flag_manager.is_feature_enabled("TAGGING_SYSTEM"),
+            menu_cond=lambda: feature_flag_manager.is_feature_enabled(
+                "TAGGING_SYSTEM"),
         )
         appbuilder.add_api(LogRestApi)
         appbuilder.add_view(
@@ -382,7 +384,8 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
             category="Manage",
             category_label=__("Manage"),
             icon="fa-exclamation-triangle",
-            menu_cond=lambda: feature_flag_manager.is_feature_enabled("ALERT_REPORTS"),
+            menu_cond=lambda: feature_flag_manager.is_feature_enabled(
+                "ALERT_REPORTS"),
         )
 
         appbuilder.add_view(
@@ -511,7 +514,8 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
                 set_isolation_level_to,
             )
             with self.superset_app.app_context():
-                db.engine.execution_options(isolation_level=set_isolation_level_to)
+                db.engine.execution_options(
+                    isolation_level=set_isolation_level_to)
 
     def configure_auth_provider(self) -> None:
         machine_auth_provider_factory.init_app(self.superset_app)
@@ -606,7 +610,8 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
                         environ["wsgi.input_terminated"] = True
                     return self.app(environ, start_response)
 
-            self.superset_app.wsgi_app = ChunkedEncodingFix(self.superset_app.wsgi_app)
+            self.superset_app.wsgi_app = ChunkedEncodingFix(
+                self.superset_app.wsgi_app)
 
         if self.config["UPLOAD_FOLDER"]:
             with contextlib.suppress(OSError):
@@ -666,7 +671,8 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         with self.superset_app.app_context():
             pessimistic_connection_handling(db.engine)
 
-        migrate.init_app(self.superset_app, db=db, directory=APP_DIR + "/migrations")
+        migrate.init_app(self.superset_app, db=db,
+                         directory=APP_DIR + "/migrations")
 
     def configure_wtf(self) -> None:
         if self.config["WTF_CSRF_ENABLED"]:
