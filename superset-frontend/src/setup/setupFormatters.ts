@@ -19,6 +19,7 @@
 import {
   createDurationFormatter,
   getNumberFormatter,
+  createD3NumberFormatter,
   getNumberFormatterRegistry,
   NumberFormats,
   getTimeFormatterRegistry,
@@ -29,6 +30,7 @@ import {
   createSmartDateVerboseFormatter,
   createSmartDateDetailedFormatter,
 } from '@superset-ui/core';
+
 import { FormatLocaleDefinition } from 'd3-format';
 import { TimeLocaleDefinition } from 'd3-time-format';
 
@@ -76,6 +78,30 @@ export default function setupFormatters(
     .registerValue(
       'DURATION_SUB',
       createDurationFormatter({ formatSubMilliseconds: true }),
+    )
+    .registerValue(
+      'CURRENCY_INDIA',
+      createD3NumberFormatter({
+        locale: {
+          decimal: '.',
+          thousands: ',',
+          grouping: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+          currency: ['₹', ''],
+        },
+        formatString: '$,.2f',
+      }),
+    )
+    .registerValue(
+      'CURRENCY_THAILAND',
+      createD3NumberFormatter({
+        locale: {
+          decimal: '.',
+          thousands: ',',
+          grouping: [3],
+          currency: ['฿', ''],
+        },
+        formatString: '$,.2f',
+      }),
     );
 
   const timeFormatterRegistry = getTimeFormatterRegistry();
