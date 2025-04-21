@@ -1,0 +1,2724 @@
+# Thai translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-04-21 16:17+0530\n"
+"PO-Revision-Date: 2025-04-21 18:21+0530\n"
+"Last-Translator: \n"
+"Language-Team: th <LL@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.15.0\n"
+"X-Generator: Poedit 3.5\n"
+
+#: superset/errors.py:105
+msgid "The datasource is too large to query."
+msgstr "แหล่งข้อมูลมีขนาดใหญ่เกินไปที่จะสอบถาม"
+
+#: superset/errors.py:106
+msgid "The database is under an unusual load."
+msgstr "ฐานข้อมูลอยู่ภายใต้การโหลดที่ผิดปกติ"
+
+#: superset/errors.py:107
+msgid "The database returned an unexpected error."
+msgstr "ฐานข้อมูลส่งคืนข้อผิดพลาดที่ไม่คาดคิด"
+
+#: superset/errors.py:108
+msgid ""
+"There is a syntax error in the SQL query. Perhaps there was a misspelling "
+"or a typo."
+msgstr "มีข้อผิดพลาดทางไวยากรณ์ในแบบสอบถาม SQL บางทีอาจมีการสะกดผิดหรือพิมพ์ผิด"
+
+#: superset/errors.py:112
+msgid "The column was deleted or renamed in the database."
+msgstr "คอลัมน์ถูกลบหรือเปลี่ยนชื่อในฐานข้อมูล"
+
+#: superset/errors.py:113
+msgid "The table was deleted or renamed in the database."
+msgstr "ตารางถูกลบหรือเปลี่ยนชื่อในฐานข้อมูล"
+
+#: superset/errors.py:114
+msgid "One or more parameters specified in the query are missing."
+msgstr "หนึ่งพารามิเตอร์หรือมากกว่าที่ระบุในแบบสอบถามจะหายไป"
+
+#: superset/errors.py:115
+msgid "The hostname provided can't be resolved."
+msgstr "ชื่อโฮสต์ที่ให้ไว้ไม่สามารถแก้ไขได้"
+
+#: superset/errors.py:116
+msgid "The port is closed."
+msgstr "พอร์ตถูกปิด"
+
+#: superset/errors.py:117
+msgid "The host might be down, and can't be reached on the provided port."
+msgstr "โฮสต์อาจจะลงและไม่สามารถเข้าถึงได้บนพอร์ตที่ให้ไว้"
+
+#: superset/errors.py:118
+msgid "Superset encountered an error while running a command."
+msgstr "Superset พบข้อผิดพลาดในขณะที่เรียกใช้คำสั่ง"
+
+#: superset/errors.py:119
+msgid "Superset encountered an unexpected error."
+msgstr "Superset พบข้อผิดพลาดที่ไม่คาดคิด"
+
+#: superset/errors.py:120
+msgid "The username provided when connecting to a database is not valid."
+msgstr "ชื่อผู้ใช้ที่ให้ไว้เมื่อเชื่อมต่อกับฐานข้อมูลไม่ถูกต้อง"
+
+#: superset/errors.py:121
+msgid "The password provided when connecting to a database is not valid."
+msgstr "รหัสผ่านที่ให้เมื่อเชื่อมต่อกับฐานข้อมูลไม่ถูกต้อง"
+
+#: superset/errors.py:122
+msgid "Either the username or the password is wrong."
+msgstr "ชื่อผู้ใช้หรือรหัสผ่านนั้นผิด"
+
+#: superset/errors.py:123
+msgid "Either the database is spelled incorrectly or does not exist."
+msgstr "ไม่ว่าฐานข้อมูลจะถูกสะกดไม่ถูกต้องหรือไม่มีอยู่จริง"
+
+#: superset/errors.py:124
+msgid "The schema was deleted or renamed in the database."
+msgstr "สคีมาถูกลบหรือเปลี่ยนชื่อในฐานข้อมูล"
+
+#: superset/errors.py:125
+msgid "User doesn't have the proper permissions."
+msgstr "ผู้ใช้ไม่มีสิทธิ์ที่เหมาะสม"
+
+#: superset/errors.py:126
+msgid "One or more parameters needed to configure a database are missing."
+msgstr "หนึ่งพารามิเตอร์ที่จำเป็นในการกำหนดค่าฐานข้อมูลหายไป"
+
+#: superset/errors.py:127
+msgid "The submitted payload has the incorrect format."
+msgstr "น้ำหนักบรรทุกที่ส่งมีรูปแบบที่ไม่ถูกต้อง"
+
+#: superset/errors.py:128
+msgid "The submitted payload has the incorrect schema."
+msgstr "น้ำหนักบรรทุกที่ส่งมีสคีมาที่ไม่ถูกต้อง"
+
+#: superset/errors.py:129
+msgid "Results backend needed for asynchronous queries is not configured."
+msgstr "ผลลัพธ์แบ็กเอนด์ที่จำเป็นสำหรับการสืบค้นแบบอะซิงโครนัสไม่ได้รับการกำหนดค่า"
+
+#: superset/errors.py:130
+msgid "Database does not allow data manipulation."
+msgstr "ฐานข้อมูลไม่อนุญาตให้มีการจัดการข้อมูล"
+
+#: superset/errors.py:131
+msgid ""
+"The CTAS (create table as select) doesn't have a SELECT statement at the "
+"end. Please make sure your query has a SELECT as its last statement. Then, "
+"try running your query again."
+msgstr ""
+"CTAs (สร้างตารางเป็นเลือก) ไม่มีคำสั่ง SELECT ในตอนท้าย "
+"โปรดตรวจสอบให้แน่ใจว่าแบบสอบถามของคุณเลือกเป็นคำสั่งสุดท้าย "
+"จากนั้นลองใช้การสืบค้นของคุณอีกครั้ง"
+
+#: superset/errors.py:136
+msgid "CVAS (create view as select) query has more than one statement."
+msgstr "CVAS (สร้างมุมมองเป็นแบบสอบถาม) มีคำสั่งมากกว่าหนึ่งคำสั่ง"
+
+#: superset/errors.py:137
+msgid "CVAS (create view as select) query is not a SELECT statement."
+msgstr "CVAS (สร้างมุมมองเป็นแบบสอบถาม) แบบสอบถามไม่ใช่คำสั่ง SELECT"
+
+#: superset/errors.py:138
+msgid "Query is too complex and takes too long to run."
+msgstr "แบบสอบถามซับซ้อนเกินไปและใช้เวลานานเกินไปในการทำงาน"
+
+#: superset/errors.py:139
+msgid "The database is currently running too many queries."
+msgstr "ฐานข้อมูลกำลังใช้การสืบค้นมากเกินไป"
+
+#: superset/errors.py:140
+msgid "One or more parameters specified in the query are malformed."
+msgstr "หนึ่งพารามิเตอร์หรือมากกว่าที่ระบุในแบบสอบถามจะไม่ถูกต้อง"
+
+#: superset/errors.py:141
+msgid "The object does not exist in the given database."
+msgstr "วัตถุไม่มีอยู่ในฐานข้อมูลที่กำหนด"
+
+#: superset/errors.py:142
+msgid "The query has a syntax error."
+msgstr "แบบสอบถามมีข้อผิดพลาดทางไวยากรณ์"
+
+#: superset/errors.py:143
+msgid "The results backend no longer has the data from the query."
+msgstr "แบ็กเอนด์ผลลัพธ์ไม่ได้มีข้อมูลจากแบบสอบถามอีกต่อไป"
+
+#: superset/errors.py:144
+msgid "The query associated with the results was deleted."
+msgstr "แบบสอบถามที่เกี่ยวข้องกับผลลัพธ์ถูกลบ"
+
+#: superset/errors.py:145
+msgid ""
+"The results stored in the backend were stored in a different format, and no "
+"longer can be deserialized."
+msgstr "ผลลัพธ์ที่เก็บไว้ในแบ็กเอนด์ถูกเก็บไว้ในรูปแบบที่แตกต่างกันและไม่สามารถลดลงได้อีกต่อไป"
+
+#: superset/errors.py:149
+msgid "The port number is invalid."
+msgstr "หมายเลขพอร์ตไม่ถูกต้อง"
+
+#: superset/errors.py:150
+msgid "Failed to start remote query on a worker."
+msgstr "ล้มเหลวในการเริ่มต้นการสืบค้นระยะไกลกับคนงาน"
+
+#: superset/errors.py:151
+msgid "The database was deleted."
+msgstr "ฐานข้อมูลถูกลบ"
+
+#: superset/errors.py:152 superset/models/helpers.py:141
+msgid "Custom SQL fields cannot contain sub-queries."
+msgstr "ฟิลด์ SQL แบบกำหนดเองไม่สามารถมีการคาดการณ์ย่อยได้"
+
+#: superset/errors.py:153
+msgid "The submitted payload failed validation."
+msgstr "การตรวจสอบเพย์โหลดที่ส่งล้มเหลว"
+
+#: superset/databases/schemas.py:223 superset/exceptions.py:199
+msgid "Invalid certificate"
+msgstr "ใบรับรองไม่ถูกต้อง"
+
+#: superset/exceptions.py:295
+msgid "The schema of the submitted payload is invalid."
+msgstr "สคีมาของน้ำหนักบรรทุกที่ส่งไม่ถูกต้อง"
+
+#: superset/exceptions.py:320
+msgid "Error parsing"
+msgstr "การแยกวิเคราะห์ข้อผิดพลาด"
+
+#: superset/exceptions.py:322
+#, python-format
+msgid " near '%(highlight)s'"
+msgstr "ใกล้ '%(highlight)s'"
+
+#: superset/exceptions.py:324
+#, python-format
+msgid " at line %(line)d"
+msgstr "ที่บรรทัด %(line)d"
+
+#: superset/exceptions.py:326
+#, python-format
+msgid ":%(column)d"
+msgstr ":%(column)d"
+
+#: superset/jinja_context.py:364
+#, python-format
+msgid "Unsafe return type for function %(func)s: %(value_type)s"
+msgstr "ประเภทการส่งคืนที่ไม่ปลอดภัยสำหรับฟังก์ชั่น %(func)s: %(value_type)s"
+
+#: superset/jinja_context.py:375
+#, python-format
+msgid "Unsupported return value for method %(name)s"
+msgstr "ค่าส่งคืนที่ไม่ได้รับการสนับสนุนสำหรับวิธี %(name)s"
+
+#: superset/jinja_context.py:391
+#, python-format
+msgid "Unsafe template value for key %(key)s: %(value_type)s"
+msgstr "ค่าเทมเพลตที่ไม่ปลอดภัยสำหรับคีย์ %(key)s: %(value_type)s"
+
+#: superset/jinja_context.py:402
+#, python-format
+msgid "Unsupported template value for key %(key)s"
+msgstr "ค่าเทมเพลตที่ไม่ได้รับการสนับสนุนสำหรับคีย์ %(key)s"
+
+#: superset/jinja_context.py:756
+#, python-format
+msgid ""
+"Please specify the Dataset ID for the ``%(name)s`` metric in the Jinja "
+"macro."
+msgstr "โปรดระบุรหัสชุดข้อมูลสำหรับตัวชี้วัด `` %(name)s`` ในมาโคร Jinja"
+
+#: superset/jinja_context.py:806
+#, python-format
+msgid "Metric ``%(metric_name)s`` not found in %(dataset_name)s."
+msgstr "Metric ``%(metric_name)s`` ไม่พบใน %(dataset_name)s."
+
+#: superset/viz.py:125
+msgid "Viz is missing a datasource"
+msgstr "ได้แก่ หายไปจากแหล่งข้อมูล"
+
+#: superset/viz.py:235
+msgid ""
+"Applied rolling window did not return any data. Please make sure the source "
+"query satisfies the minimum periods defined in the rolling window."
+msgstr ""
+"หน้าต่างกลิ้งที่ใช้ไม่ได้ส่งคืนข้อมูลใด ๆ "
+"โปรดตรวจสอบให้แน่ใจว่าแบบสอบถามต้นฉบับเป็นไปตามระยะเวลาขั้นต่ำที่กำหนดไว้ในหน้าต่างกลิ้ง"
+
+#: superset/utils/date_parser.py:343 superset/viz.py:387
+msgid "From date cannot be larger than to date"
+msgstr "วันที่ไม่สามารถใหญ่กว่าจนถึงปัจจุบัน"
+
+#: superset/viz.py:562
+msgid "Cached value not found"
+msgstr "ไม่พบมูลค่าแคช"
+
+#: superset/viz.py:577
+#, python-format
+msgid "Columns missing in datasource: %(invalid_columns)s"
+msgstr "คอลัมน์ที่ขาดหายไปใน DataSource: %(invalid_columns)s"
+
+#: superset/viz.py:705
+msgid "Time Table View"
+msgstr "มุมมองตารางเวลา"
+
+#: superset/viz.py:714 superset/viz.py:1273
+msgid "Pick at least one metric"
+msgstr "เลือกอย่างน้อยหนึ่งเมตริก"
+
+#: superset/viz.py:718
+msgid "When using 'Group By' you are limited to use a single metric"
+msgstr "เมื่อใช้ 'กลุ่มโดย' คุณถูก จำกัด ให้ใช้ตัวชี้วัดเดียว"
+
+#: superset/viz.py:751
+msgid "Calendar Heatmap"
+msgstr "Calendar HeatMap"
+
+#: superset/viz.py:840
+msgid "Bubble Chart"
+msgstr "แผนภูมิฟอง"
+
+#: superset/viz.py:863
+msgid "Please use 3 different metric labels"
+msgstr "โปรดใช้ป้ายเมตริก 3 รายการที่แตกต่างกัน"
+
+#: superset/viz.py:865
+msgid "Pick a metric for x, y and size"
+msgstr "เลือกเมตริกสำหรับ x, y และขนาด"
+
+#: superset/viz.py:892
+msgid "Bullet Chart"
+msgstr "แผนภูมิกระสุน"
+
+#: superset/viz.py:905
+msgid "Pick a metric to display"
+msgstr "เลือกเมตริกเพื่อแสดง"
+
+#: superset/viz.py:923
+msgid "Time Series - Line Chart"
+msgstr "ชุดเวลา - แผนภูมิบรรทัด"
+
+#: superset/common/query_context_processor.py:387 superset/viz.py:1061
+msgid ""
+"An enclosed time range (both start and end) must be specified when using a "
+"Time Comparison."
+msgstr "ต้องระบุช่วงเวลาที่ปิดล้อม (ทั้งการเริ่มต้นและสิ้นสุด) เมื่อใช้การเปรียบเทียบเวลา"
+
+#: superset/viz.py:1129
+msgid "Time Series - Bar Chart"
+msgstr "ชุดเวลา - แผนภูมิบาร์"
+
+#: superset/viz.py:1137
+msgid "Time Series - Period Pivot"
+msgstr "อนุกรมเวลา - ช่วงเวลาหมุน"
+
+#: superset/viz.py:1184
+msgid "Time Series - Percent Change"
+msgstr "อนุกรมเวลา - การเปลี่ยนแปลงเปอร์เซ็นต์"
+
+#: superset/viz.py:1191
+msgid "Time Series - Stacked"
+msgstr "อนุกรมเวลา - ซ้อนกัน"
+
+#: superset/viz.py:1200
+msgid "Histogram"
+msgstr "ฮิสโตแกรม"
+
+#: superset/viz.py:1210
+msgid "Must have at least one numeric column specified"
+msgstr "ต้องมีคอลัมน์ตัวเลขอย่างน้อยหนึ่งคอลัมน์ที่ระบุ"
+
+#: superset/viz.py:1260
+msgid "Distribution - Bar Chart"
+msgstr "การกระจาย - แผนภูมิบาร์"
+
+#: superset/viz.py:1270
+msgid "Can't have overlap between Series and Breakdowns"
+msgstr "ไม่สามารถทับซ้อนระหว่างซีรีส์และรายละเอียดได้"
+
+#: superset/viz.py:1275
+msgid "Pick at least one field for [Series]"
+msgstr "เลือกอย่างน้อยหนึ่งฟิลด์สำหรับ [ซีรีส์]"
+
+#: superset/viz.py:1347
+msgid "Sankey"
+msgstr "แอร์คีย์"
+
+#: superset/viz.py:1356
+msgid "Pick exactly 2 columns as [Source / Target]"
+msgstr "เลือก 2 คอลัมน์เป็น [แหล่งที่มา / เป้าหมาย]"
+
+#: superset/viz.py:1408
+msgid ""
+"There's a loop in your Sankey, please provide a tree. Here's a faulty link: "
+"{}"
+msgstr "มีห่วงใน Sankey ของคุณโปรดจัดเตรียมต้นไม้ นี่คือลิงค์ที่ผิดพลาด: {}"
+
+#: superset/viz.py:1420
+msgid "Directed Force Layout"
+msgstr "เค้าโครงบังคับ"
+
+#: superset/viz.py:1460
+msgid "Country Map"
+msgstr "แผนที่ประเทศ"
+
+#: superset/viz.py:1496
+msgid "World Map"
+msgstr "แผนที่โลก"
+
+#: superset/viz.py:1563
+msgid "Parallel Coordinates"
+msgstr "พิกัดคู่ขนาน"
+
+#: superset/viz.py:1593
+msgid "Heatmap"
+msgstr "แมปความร้อน"
+
+#: superset/viz.py:1655
+msgid "Horizon Charts"
+msgstr "แผนภูมิขอบฟ้า"
+
+#: superset/viz.py:1666
+msgid "Mapbox"
+msgstr "กล่องแผนที่"
+
+#: superset/viz.py:1681
+msgid "[Longitude] and [Latitude] must be set"
+msgstr "[ลองจิจูด] และ [ละติจูด] จะต้องตั้งค่า"
+
+#: superset/viz.py:1691
+msgid "Must have a [Group By] column to have 'count' as the [Label]"
+msgstr "ต้องมีคอลัมน์ [กลุ่มโดย] เพื่อให้ 'นับ' เป็น [ป้ายกำกับ]"
+
+#: superset/viz.py:1715
+msgid "Choice of [Label] must be present in [Group By]"
+msgstr "ตัวเลือกของ [ฉลาก] จะต้องมีอยู่ใน [กลุ่มโดย]"
+
+#: superset/viz.py:1723
+msgid "Choice of [Point Radius] must be present in [Group By]"
+msgstr "ทางเลือกของ [Point Radius] จะต้องอยู่ใน [กลุ่มโดย]"
+
+#: superset/viz.py:1731
+msgid "[Longitude] and [Latitude] columns must be present in [Group By]"
+msgstr "[ลองจิจูด] และ [ละติจูด] คอลัมน์จะต้องมีอยู่ใน [กลุ่มโดย]"
+
+#: superset/viz.py:1813
+msgid "Deck.gl - Multiple Layers"
+msgstr "Deck.gl - หลายเลเยอร์"
+
+#: superset/viz.py:1858 superset/viz.py:1898
+msgid "Bad spatial key"
+msgstr "คีย์เชิงพื้นที่ที่ไม่ดี"
+
+#: superset/viz.py:1880
+#, python-format
+msgid "Invalid spatial point encountered: %(latlong)s"
+msgstr "พบจุดอวกาศที่ไม่ถูกต้อง: %(latlong)s"
+
+#: superset/viz.py:1920
+msgid ""
+"Encountered invalid NULL spatial "
+"entry,                                        please consider filtering "
+"those out"
+msgstr "พบรายการอวกาศว่างเปล่าที่ไม่ถูกต้องโปรดพิจารณากรองสิ่งเหล่านั้นออก"
+
+#: superset/viz.py:2017
+msgid "Deck.gl - Scatter plot"
+msgstr "Deck.gl - พล็อตกระจาย"
+
+#: superset/viz.py:2070
+msgid "Deck.gl - Screen Grid"
+msgstr "Deck.gl - กริดหน้าจอ"
+
+#: superset/viz.py:2099
+msgid "Deck.gl - 3D Grid"
+msgstr "Deck.gl - 3D Grid"
+
+#: superset/viz.py:2133
+msgid "Deck.gl - Paths"
+msgstr "Deck.gl - เส้นทาง"
+
+#: superset/viz.py:2184
+msgid "Deck.gl - Polygon"
+msgstr "Deck.gl - Polygon"
+
+#: superset/viz.py:2219
+msgid "Deck.gl - 3D HEX"
+msgstr "Deck.gl - 3D Hex"
+
+#: superset/viz.py:2241
+msgid "Deck.gl - Heatmap"
+msgstr "Deck.gl - ความร้อน"
+
+#: superset/viz.py:2261
+msgid "Deck.gl - Contour"
+msgstr "Deck.gl - Contour"
+
+#: superset/viz.py:2281
+msgid "Deck.gl - GeoJSON"
+msgstr "Deck.gl - Geojson"
+
+#: superset/viz.py:2301
+msgid "Deck.gl - Arc"
+msgstr "Deck.gl - Arc"
+
+#: superset/viz.py:2335
+msgid "Event flow"
+msgstr "กระแสเหตุการณ์"
+
+#: superset/viz.py:2368
+msgid "Time Series - Paired t-test"
+msgstr "อนุกรมเวลา - จับคู่ t -test"
+
+#: superset/viz.py:2440
+msgid "Time Series - Nightingale Rose Chart"
+msgstr "Time Series - Nightingale Rose Chart"
+
+#: superset/viz.py:2475
+msgid "Partition Diagram"
+msgstr "แผนภาพพาร์ติชั่น"
+
+#: superset/viz.py:2640
+msgid "Please choose at least one groupby"
+msgstr "โปรดเลือกกลุ่มอย่างน้อยหนึ่งกลุ่ม"
+
+#: superset/advanced_data_type/api.py:103
+#, python-format
+msgid "Invalid advanced data type: %(advanced_data_type)s"
+msgstr "ประเภทข้อมูลขั้นสูงที่ไม่ถูกต้อง: %(advanced_data_type)s"
+
+#: superset/annotation_layers/api.py:346
+#, python-format
+msgid "Deleted %(num)d annotation layer"
+msgid_plural "Deleted %(num)d annotation layers"
+msgstr[0] ""
+
+#: superset/annotation_layers/annotations/filters.py:28
+#: superset/annotation_layers/filters.py:28 superset/charts/filters.py:37
+#: superset/css_templates/filters.py:28
+#: superset/queries/saved_queries/filters.py:32 superset/reports/filters.py:44
+msgid "All Text"
+msgstr "ข้อความทั้งหมด"
+
+#: superset/annotation_layers/annotations/api.py:488
+#, python-format
+msgid "Deleted %(num)d annotation"
+msgid_plural "Deleted %(num)d annotations"
+msgstr[0] ""
+
+#: superset/charts/api.py:530
+#, python-format
+msgid "Deleted %(num)d chart"
+msgid_plural "Deleted %(num)d charts"
+msgstr[0] ""
+
+#: superset/charts/filters.py:91 superset/dashboards/filters.py:223
+#: superset/datasets/filters.py:39
+msgid "Is certified"
+msgstr "ได้รับการรับรอง"
+
+#: superset/charts/filters.py:120 superset/dashboards/filters.py:249
+msgid "Has created by"
+msgstr "ได้สร้างโดย"
+
+#: superset/charts/filters.py:132 superset/dashboards/filters.py:56
+msgid "Created by me"
+msgstr "สร้างโดยฉัน"
+
+#: superset/charts/filters.py:152
+msgid "Owned Created or Favored"
+msgstr "เป็นเจ้าของที่สร้างหรือชื่นชอบ"
+
+#: superset/charts/schemas.py:641
+msgid "`confidence_interval` must be between 0 and 1 (exclusive)"
+msgstr "`ความมั่นใจ _interval` ต้องอยู่ระหว่าง 0 ถึง 1 (พิเศษ)"
+
+#: superset/charts/schemas.py:722
+msgid ""
+"lower percentile must be greater than 0 and less than 100. Must be lower "
+"than upper percentile."
+msgstr "เปอร์เซ็นไทล์ที่ต่ำกว่าจะต้องมากกว่า 0 และน้อยกว่า 100 ต้องต่ำกว่าเปอร์เซ็นไทล์ส่วนบน"
+
+#: superset/charts/schemas.py:737
+msgid ""
+"upper percentile must be greater than 0 and less than 100. Must be higher "
+"than lower percentile."
+msgstr "เปอร์เซ็นไทล์ส่วนบนต้องมากกว่า 0 และน้อยกว่า 100 ต้องสูงกว่าเปอร์เซ็นไทล์ที่ต่ำกว่า"
+
+#: superset/charts/schemas.py:1095
+msgid "`width` must be greater or equal to 0"
+msgstr "`ความกว้าง 'จะต้องสูงกว่าหรือเท่ากับ 0"
+
+#: superset/charts/schemas.py:1268
+msgid "`row_limit` must be greater than or equal to 0"
+msgstr "`row_limit` ต้องมากกว่าหรือเท่ากับ 0"
+
+#: superset/charts/schemas.py:1275
+msgid "`row_offset` must be greater than or equal to 0"
+msgstr "`row_offset` ต้องมากกว่าหรือเท่ากับ 0"
+
+#: superset/charts/schemas.py:1297
+msgid "orderby column must be populated"
+msgstr "คอลัมน์ orderby จะต้องมีการเติม"
+
+#: superset/charts/data/api.py:136
+msgid "Chart has no query context saved. Please save the chart again."
+msgstr "แผนภูมิไม่มีการบันทึกบริบทแบบสอบถาม โปรดบันทึกแผนภูมิอีกครั้ง"
+
+#: superset/charts/data/api.py:159 superset/charts/data/api.py:247
+#: superset/charts/data/api.py:317
+#, python-format
+msgid "Request is incorrect: %(error)s"
+msgstr "คำขอไม่ถูกต้อง: %(error)s"
+
+#: superset/charts/data/api.py:234
+msgid "Request is not JSON"
+msgstr "คำขอไม่ใช่ JSON"
+
+#: superset/charts/data/api.py:367
+msgid "Empty query result"
+msgstr "ผลการสอบถามที่ว่างเปล่า"
+
+#: superset/commands/dataset/exceptions.py:143
+#: superset/commands/exceptions.py:112
+msgid "Owners are invalid"
+msgstr "เจ้าของไม่ถูกต้อง"
+
+#: superset/commands/exceptions.py:119
+msgid "Some roles do not exist"
+msgstr "บางบทบาทไม่มีอยู่จริง"
+
+#: superset/commands/exceptions.py:127
+msgid "Datasource type is invalid"
+msgstr "ประเภทแหล่งข้อมูลไม่ถูกต้อง"
+
+#: superset/commands/exceptions.py:135
+msgid "Datasource does not exist"
+msgstr "แหล่งข้อมูลไม่มีอยู่จริง"
+
+#: superset/commands/exceptions.py:142
+msgid "Query does not exist"
+msgstr "แบบสอบถามไม่มีอยู่จริง"
+
+#: superset/commands/annotation_layer/exceptions.py:29
+msgid "Annotation layer parameters are invalid."
+msgstr "พารามิเตอร์เลเยอร์คำอธิบายประกอบไม่ถูกต้อง"
+
+#: superset/commands/annotation_layer/exceptions.py:33
+msgid "Annotation layer could not be created."
+msgstr "ไม่สามารถสร้างเลเยอร์คำอธิบายประกอบได้"
+
+#: superset/commands/annotation_layer/exceptions.py:37
+msgid "Annotation layer could not be updated."
+msgstr "ไม่สามารถอัปเดตเลเยอร์คำอธิบายประกอบได้"
+
+#: superset/commands/annotation_layer/exceptions.py:41
+msgid "Annotation layer not found."
+msgstr "ไม่พบเลเยอร์คำอธิบายประกอบ"
+
+#: superset/commands/annotation_layer/exceptions.py:45
+msgid "Annotation layers could not be deleted."
+msgstr "ไม่สามารถลบเลเยอร์คำอธิบายประกอบได้"
+
+#: superset/commands/annotation_layer/exceptions.py:49
+msgid "Annotation layer has associated annotations."
+msgstr "คำอธิบายประกอบเลเยอร์มีคำอธิบายประกอบที่เกี่ยวข้อง"
+
+#: superset/commands/annotation_layer/exceptions.py:58
+msgid "Name must be unique"
+msgstr "ชื่อต้องไม่ซ้ำกัน"
+
+#: superset/commands/annotation_layer/annotation/exceptions.py:35
+msgid "End date must be after start date"
+msgstr "วันที่สิ้นสุดจะต้องเป็นหลังวันที่เริ่มต้น"
+
+#: superset/commands/annotation_layer/annotation/exceptions.py:46
+msgid "Short description must be unique for this layer"
+msgstr "คำอธิบายสั้น ๆ ต้องไม่ซ้ำกันสำหรับเลเยอร์นี้"
+
+#: superset/commands/annotation_layer/annotation/exceptions.py:52
+msgid "Annotation not found."
+msgstr "ไม่พบคำอธิบายประกอบ"
+
+#: superset/commands/annotation_layer/annotation/exceptions.py:56
+msgid "Annotation parameters are invalid."
+msgstr "พารามิเตอร์คำอธิบายประกอบไม่ถูกต้อง"
+
+#: superset/commands/annotation_layer/annotation/exceptions.py:60
+msgid "Annotation could not be created."
+msgstr "ไม่สามารถสร้างคำอธิบายประกอบได้"
+
+#: superset/commands/annotation_layer/annotation/exceptions.py:64
+msgid "Annotation could not be updated."
+msgstr "ไม่สามารถอัปเดตคำอธิบายประกอบได้"
+
+#: superset/commands/annotation_layer/annotation/exceptions.py:68
+msgid "Annotations could not be deleted."
+msgstr "ไม่สามารถลบคำอธิบายประกอบได้"
+
+#: superset/commands/chart/delete.py:62
+#: superset/commands/dashboard/delete.py:76
+#: superset/commands/database/delete.py:61
+#, python-format
+msgid "There are associated alerts or reports: %(report_names)s"
+msgstr "มีการแจ้งเตือนหรือรายงานที่เกี่ยวข้อง: %(report_names)s"
+
+#: superset/commands/chart/exceptions.py:38
+#, python-format
+msgid ""
+"Time string is ambiguous. Please specify [%(human_readable)s ago] or "
+"[%(human_readable)s later]."
+msgstr ""
+"สตริงเวลาไม่ชัดเจน โปรดระบุ [%(human_readable)s ที่ผ่านมา] หรือ [%(human_readable)s "
+"ภายหลัง]"
+
+#: superset/commands/chart/exceptions.py:51
+#, python-format
+msgid "Cannot parse time string [%(human_readable)s]"
+msgstr "ไม่สามารถแยกแยะสตริงเวลา [%(human_readable)s]"
+
+#: superset/commands/chart/exceptions.py:66
+#, python-format
+msgid ""
+"Time delta is ambiguous. Please specify [%(human_readable)s ago] or "
+"[%(human_readable)s later]."
+msgstr ""
+"เวลาเดลต้าไม่ชัดเจน โปรดระบุ [%(human_readable)s ที่ผ่านมา] หรือ "
+"[%(human_readable)s ภายหลัง]"
+
+#: superset/commands/chart/exceptions.py:82
+#: superset/commands/dataset/exceptions.py:42
+#: superset/commands/report/exceptions.py:39
+msgid "Database does not exist"
+msgstr "ฐานข้อมูลไม่มีอยู่จริง"
+
+#: superset/commands/chart/exceptions.py:91
+msgid "Dashboards do not exist"
+msgstr "ไม่มีแดชบอร์ด"
+
+#: superset/commands/chart/exceptions.py:101
+msgid "Datasource type is required when datasource_id is given"
+msgstr "ต้องการประเภทแหล่งข้อมูลเมื่อได้รับ dataSource_id"
+
+#: superset/commands/chart/exceptions.py:111
+msgid "Chart parameters are invalid."
+msgstr "พารามิเตอร์แผนภูมิไม่ถูกต้อง"
+
+#: superset/commands/chart/exceptions.py:115
+msgid "Chart could not be created."
+msgstr "ไม่สามารถสร้างแผนภูมิได้"
+
+#: superset/commands/chart/exceptions.py:119
+msgid "Chart could not be updated."
+msgstr "ไม่สามารถอัปเดตแผนภูมิได้"
+
+#: superset/commands/chart/exceptions.py:123
+msgid "Charts could not be deleted."
+msgstr "ไม่สามารถลบแผนภูมิได้"
+
+#: superset/commands/chart/exceptions.py:127
+#: superset/commands/dashboard/exceptions.py:70
+#: superset/commands/database/exceptions.py:140
+msgid "There are associated alerts or reports"
+msgstr "มีการแจ้งเตือนหรือรายงานที่เกี่ยวข้อง"
+
+#: superset/commands/chart/exceptions.py:131
+msgid "You don't have access to this chart."
+msgstr "คุณไม่สามารถเข้าถึงแผนภูมินี้ได้"
+
+#: superset/commands/chart/exceptions.py:135
+msgid "Changing this chart is forbidden"
+msgstr "การเปลี่ยนแผนภูมินี้เป็นสิ่งต้องห้าม"
+
+#: superset/commands/chart/exceptions.py:147
+msgid "Import chart failed for an unknown reason"
+msgstr "แผนภูมินำเข้าล้มเหลวด้วยเหตุผลที่ไม่ทราบสาเหตุ"
+
+#: superset/commands/chart/exceptions.py:151
+msgid "Changing one or more of these dashboards is forbidden"
+msgstr "การเปลี่ยนแดชบอร์ดเหล่านี้อย่างน้อยหนึ่งครั้งเป็นสิ่งต้องห้าม"
+
+#: superset/commands/chart/exceptions.py:156
+msgid "Chart not found"
+msgstr "ไม่พบแผนภูมิ"
+
+#: superset/commands/chart/exceptions.py:160
+msgid "Error faving chart"
+msgstr "ข้อผิดพลาดแผนภูมิ"
+
+#: superset/commands/chart/exceptions.py:164
+msgid "Error unfaving chart"
+msgstr "เกิดข้อผิดพลาดในแผนภูมิ"
+
+#: superset/commands/chart/data/get_data_command.py:54
+#, python-format
+msgid "Error: %(error)s"
+msgstr "ข้อผิดพลาด: %(error)s"
+
+#: superset/commands/css/exceptions.py:23
+msgid "CSS templates could not be deleted."
+msgstr "ไม่สามารถลบเทมเพลต CSS ได้"
+
+#: superset/commands/css/exceptions.py:27
+msgid "CSS template not found."
+msgstr "ไม่พบเทมเพลต CSS"
+
+#: superset/commands/dashboard/exceptions.py:39
+msgid "Must be unique"
+msgstr "ต้องไม่ซ้ำกัน"
+
+#: superset/commands/dashboard/exceptions.py:43
+msgid "Dashboard parameters are invalid."
+msgstr "พารามิเตอร์แดชบอร์ดไม่ถูกต้อง"
+
+#: superset/commands/dashboard/exceptions.py:54
+msgid "Dashboards could not be created."
+msgstr "ไม่สามารถสร้างแดชบอร์ดได้"
+
+#: superset/commands/dashboard/exceptions.py:58
+msgid "Dashboard could not be updated."
+msgstr "ไม่สามารถอัปเดตแดชบอร์ดได้"
+
+#: superset/commands/dashboard/exceptions.py:62
+msgid "Dashboard could not be deleted."
+msgstr "ไม่สามารถลบแดชบอร์ดได้"
+
+#: superset/commands/dashboard/exceptions.py:66
+msgid "Embedded dashboard could not be deleted."
+msgstr "ไม่สามารถลบแดชบอร์ดแบบฝังได้"
+
+#: superset/commands/dashboard/exceptions.py:74
+msgid "Changing this Dashboard is forbidden"
+msgstr "การเปลี่ยนแดชบอร์ดนี้เป็นสิ่งต้องห้าม"
+
+#: superset/commands/dashboard/exceptions.py:78
+msgid "Import dashboard failed for an unknown reason"
+msgstr "นำเข้าแดชบอร์ดล้มเหลวด้วยเหตุผลที่ไม่ทราบสาเหตุ"
+
+#: superset/commands/dashboard/exceptions.py:82
+msgid "You don't have access to this dashboard."
+msgstr "คุณไม่สามารถเข้าถึงแดชบอร์ดนี้ได้"
+
+#: superset/commands/dashboard/exceptions.py:86
+msgid "Dashboard cannot be copied due to invalid parameters."
+msgstr "แดชบอร์ดไม่สามารถคัดลอกได้เนื่องจากพารามิเตอร์ที่ไม่ถูกต้อง"
+
+#: superset/commands/dashboard/exceptions.py:90
+msgid "Dashboard cannot be favorited."
+msgstr "แดชบอร์ดไม่สามารถเป็นที่ชื่นชอบได้"
+
+#: superset/commands/dashboard/exceptions.py:94
+msgid "Dashboard cannot be unfavorited."
+msgstr "แดชบอร์ดไม่สามารถเกิดขึ้นได้"
+
+#: superset/commands/dashboard/embedded/exceptions.py:34
+msgid "You don't have access to this embedded dashboard config."
+msgstr "คุณไม่สามารถเข้าถึงการกำหนดค่าแดชบอร์ดแบบฝังตัวนี้"
+
+#: superset/commands/dashboard/importers/v0.py:306
+msgid "No data in file"
+msgstr "ไม่มีข้อมูลในไฟล์"
+
+#: superset/commands/database/exceptions.py:32
+msgid "Database parameters are invalid."
+msgstr "พารามิเตอร์ฐานข้อมูลไม่ถูกต้อง"
+
+#: superset/commands/database/exceptions.py:42
+msgid "A database with the same name already exists."
+msgstr "ฐานข้อมูลที่มีชื่อเดียวกันมีอยู่แล้ว"
+
+#: superset/commands/database/exceptions.py:50
+#: superset/commands/database/ssh_tunnel/exceptions.py:67
+msgid "Field is required"
+msgstr "จำเป็นต้องมีฟิลด์"
+
+#: superset/commands/database/exceptions.py:63
+#, python-format
+msgid "Field cannot be decoded by JSON. %(json_error)s"
+msgstr "JSON ไม่สามารถถอดรหัสฟิลด์ได้ %(json_error)s"
+
+#: superset/commands/database/exceptions.py:80
+#: superset/views/database/mixins.py:270
+msgid ""
+"The metadata_params in Extra field is not configured correctly. The key %"
+"{key}s is invalid."
+msgstr "metadata_params ในฟิลด์พิเศษไม่ได้รับการกำหนดค่าอย่างถูกต้อง คีย์ %{คีย์} s ไม่ถูกต้อง"
+
+#: superset/commands/database/exceptions.py:93
+msgid "Database not found."
+msgstr "ไม่พบฐานข้อมูล"
+
+#: superset/commands/database/exceptions.py:98
+msgid "Database schema is not allowed for csv uploads."
+msgstr "ไม่อนุญาตให้ใช้สคีมาฐานข้อมูลสำหรับการอัปโหลด CSV"
+
+#: superset/commands/database/exceptions.py:103
+msgid "Database type does not support file uploads."
+msgstr "ประเภทฐานข้อมูลไม่รองรับการอัปโหลดไฟล์"
+
+#: superset/commands/database/exceptions.py:108
+msgid "Database upload file failed"
+msgstr "ไฟล์อัพโหลดฐานข้อมูลล้มเหลว"
+
+#: superset/commands/database/exceptions.py:113
+msgid "Database upload file failed, while saving metadata"
+msgstr "ไฟล์อัพโหลดฐานข้อมูลล้มเหลวในขณะที่บันทึกข้อมูลเมตา"
+
+#: superset/commands/database/exceptions.py:117
+msgid "Database could not be created."
+msgstr "ไม่สามารถสร้างฐานข้อมูลได้"
+
+#: superset/commands/database/exceptions.py:121
+msgid "Database could not be updated."
+msgstr "ไม่สามารถอัปเดตฐานข้อมูลได้"
+
+#: superset/commands/database/exceptions.py:128
+#: superset/commands/database/exceptions.py:145
+msgid "Connection failed, please check your connection settings"
+msgstr "การเชื่อมต่อล้มเหลวโปรดตรวจสอบการตั้งค่าการเชื่อมต่อของคุณ"
+
+#: superset/commands/database/exceptions.py:132
+msgid "Cannot delete a database that has datasets attached"
+msgstr "ไม่สามารถลบฐานข้อมูลที่มีชุดข้อมูลที่แนบมาได้"
+
+#: superset/commands/database/exceptions.py:136
+msgid "Database could not be deleted."
+msgstr "ไม่สามารถลบฐานข้อมูลได้"
+
+#: superset/commands/database/exceptions.py:149
+msgid "Stopped an unsafe database connection"
+msgstr "หยุดการเชื่อมต่อฐานข้อมูลที่ไม่ปลอดภัย"
+
+#: superset/commands/database/exceptions.py:153
+msgid "Could not load database driver"
+msgstr "ไม่สามารถโหลดไดรเวอร์ฐานข้อมูล"
+
+#: superset/commands/database/exceptions.py:158
+#: superset/commands/database/exceptions.py:163
+msgid "Unexpected error occurred, please check your logs for details"
+msgstr "เกิดข้อผิดพลาดที่ไม่คาดคิดโปรดตรวจสอบรายละเอียดบันทึกของคุณ"
+
+#: superset/commands/database/exceptions.py:168
+msgid "no SQL validator is configured"
+msgstr "ไม่มีการกำหนดค่าตัวตรวจสอบ SQL"
+
+#: superset/commands/database/exceptions.py:173
+msgid "No validator found (configured for the engine)"
+msgstr "ไม่พบการตรวจสอบความถูกต้อง (กำหนดค่าสำหรับเครื่องยนต์)"
+
+#: superset/commands/database/exceptions.py:178
+#: superset/commands/database/exceptions.py:188
+msgid "Was unable to check your query"
+msgstr "ไม่สามารถตรวจสอบคำถามของคุณได้"
+
+#: superset/commands/database/exceptions.py:183
+msgid "An unexpected error occurred"
+msgstr "เกิดข้อผิดพลาดที่ไม่คาดคิด"
+
+#: superset/commands/database/exceptions.py:192
+msgid "Import database failed for an unknown reason"
+msgstr "นำเข้าฐานข้อมูลล้มเหลวด้วยเหตุผลที่ไม่ทราบสาเหตุ"
+
+#: superset/commands/database/test_connection.py:186
+msgid "Could not load database driver: {}"
+msgstr "ไม่สามารถโหลดไดรเวอร์ฐานข้อมูล: {}"
+
+#: superset/commands/database/ssh_tunnel/exceptions.py:35
+msgid "SSH Tunnel could not be deleted."
+msgstr "ไม่สามารถลบอุโมงค์ SSH ได้"
+
+#: superset/commands/database/ssh_tunnel/exceptions.py:40
+msgid "SSH Tunnel not found."
+msgstr "ไม่พบอุโมงค์ SSH"
+
+#: superset/commands/database/ssh_tunnel/exceptions.py:44
+msgid "SSH Tunnel parameters are invalid."
+msgstr "พารามิเตอร์ SSH Tunnel ไม่ถูกต้อง"
+
+#: superset/commands/database/ssh_tunnel/exceptions.py:48
+msgid "A database port is required when connecting via SSH Tunnel."
+msgstr "จำเป็นต้องมีพอร์ตฐานข้อมูลเมื่อเชื่อมต่อผ่าน SSH Tunnel"
+
+#: superset/commands/database/ssh_tunnel/exceptions.py:52
+msgid "SSH Tunnel could not be updated."
+msgstr "ไม่สามารถอัปเดตอุโมงค์ SSH ได้"
+
+#: superset/commands/database/ssh_tunnel/exceptions.py:56
+msgid "Creating SSH Tunnel failed for an unknown reason"
+msgstr "การสร้างอุโมงค์ SSH ล้มเหลวด้วยเหตุผลที่ไม่ทราบสาเหตุ"
+
+#: superset/commands/database/ssh_tunnel/exceptions.py:61
+msgid "SSH Tunneling is not enabled"
+msgstr "ไม่เปิดใช้งานการขุดอุโมงค์ SSH"
+
+#: superset/commands/database/ssh_tunnel/exceptions.py:73
+msgid "Must provide credentials for the SSH Tunnel"
+msgstr "ต้องให้ข้อมูลรับรองสำหรับอุโมงค์ SSH"
+
+#: superset/commands/database/ssh_tunnel/exceptions.py:77
+msgid "Cannot have multiple credentials for the SSH Tunnel"
+msgstr "ไม่สามารถมีข้อมูลรับรองหลายรายการสำหรับอุโมงค์ SSH"
+
+#: superset/commands/database/uploaders/base.py:122
+msgid ""
+"Table already exists. You can change your 'if table already exists' "
+"strategy to append or replace or provide a different Table Name to use."
+msgstr ""
+"ตารางมีอยู่แล้ว คุณสามารถเปลี่ยนกลยุทธ์ 'Table ที่มีอยู่แล้ว' "
+"ของคุณเพื่อผนวกหรือแทนที่หรือระบุชื่อตารางอื่นที่จะใช้"
+
+#: superset/commands/database/uploaders/columnar_reader.py:69
+#: superset/commands/database/uploaders/columnar_reader.py:125
+#: superset/commands/database/uploaders/csv_reader.py:84
+#: superset/commands/database/uploaders/excel_reader.py:91
+#, python-format
+msgid "Parsing error: %(error)s"
+msgstr "การแยกวิเคราะห์ข้อผิดพลาด: %(error)s"
+
+#: superset/commands/database/uploaders/columnar_reader.py:72
+msgid "Error reading Columnar file"
+msgstr "ข้อผิดพลาดในการอ่านไฟล์คอลัมน์"
+
+#: superset/commands/database/uploaders/columnar_reader.py:85
+msgid "Unexpected no file extension found"
+msgstr "ไม่พบการขยายไฟล์ที่ไม่คาดคิด"
+
+#: superset/commands/database/uploaders/columnar_reader.py:89
+#: superset/commands/database/uploaders/columnar_reader.py:102
+msgid "Not a valid ZIP file"
+msgstr "ไม่ใช่ไฟล์ซิปที่ถูกต้อง"
+
+#: superset/commands/database/uploaders/columnar_reader.py:96
+msgid "ZIP file contains multiple file types"
+msgstr "ไฟล์ zip มีหลายประเภทไฟล์"
+
+#: superset/commands/database/uploaders/csv_reader.py:87
+msgid "Error reading CSV file"
+msgstr "ข้อผิดพลาดในการอ่านไฟล์ CSV"
+
+#: superset/commands/database/uploaders/excel_reader.py:94
+msgid "Error reading Excel file"
+msgstr "ข้อผิดพลาดในการอ่านไฟล์ excel"
+
+#: superset/commands/database/uploaders/excel_reader.py:101
+msgid "Excel file format cannot be determined"
+msgstr "ไม่สามารถกำหนดรูปแบบไฟล์ excel ได้"
+
+#: superset/commands/dataset/exceptions.py:33
+#, python-format
+msgid "Dataset %(table)s already exists"
+msgstr "ชุดข้อมูล %(table)s มีอยู่แล้ว"
+
+#: superset/commands/dataset/exceptions.py:51
+msgid "Database not allowed to change"
+msgstr "ไม่อนุญาตให้เปลี่ยนฐานข้อมูล"
+
+#: superset/commands/dataset/exceptions.py:69
+msgid "One or more columns do not exist"
+msgstr "ไม่มีคอลัมน์หนึ่งคอลัมน์ขึ้นไป"
+
+#: superset/commands/dataset/exceptions.py:79
+msgid "One or more columns are duplicated"
+msgstr "มีการทำซ้ำคอลัมน์หนึ่งคอลัมน์ขึ้นไป"
+
+#: superset/commands/dataset/exceptions.py:89
+msgid "One or more columns already exist"
+msgstr "มีคอลัมน์หนึ่งคอลัมน์หรือมากกว่านั้นมีอยู่แล้ว"
+
+#: superset/commands/dataset/exceptions.py:98
+msgid "One or more metrics do not exist"
+msgstr "ไม่มีตัวชี้วัดหนึ่งตัวขึ้นไป"
+
+#: superset/commands/dataset/exceptions.py:108
+msgid "One or more metrics are duplicated"
+msgstr "มีการทำซ้ำอย่างน้อยหนึ่งตัว"
+
+#: superset/commands/dataset/exceptions.py:118
+msgid "One or more metrics already exist"
+msgstr "มีตัวชี้วัดหนึ่งตัวขึ้นไปมีอยู่แล้ว"
+
+#: superset/commands/dataset/exceptions.py:129
+#, python-format
+msgid ""
+"Table [%(table)s] could not be found, please double check your database "
+"connection, schema, and table name"
+msgstr ""
+"ไม่พบตาราง [%(table)s] โปรดตรวจสอบการเชื่อมต่อฐานข้อมูลของคุณสองครั้งสคีมาและชื่อตาราง"
+
+#: superset/commands/dataset/exceptions.py:155
+msgid "Dataset does not exist"
+msgstr "ชุดข้อมูลไม่มีอยู่จริง"
+
+#: superset/commands/dataset/exceptions.py:159
+msgid "Dataset parameters are invalid."
+msgstr "พารามิเตอร์ชุดข้อมูลไม่ถูกต้อง"
+
+#: superset/commands/dataset/exceptions.py:163
+msgid "Dataset could not be created."
+msgstr "ไม่สามารถสร้างชุดข้อมูลได้"
+
+#: superset/commands/dataset/exceptions.py:167
+#: superset/commands/dataset/exceptions.py:175
+msgid "Dataset could not be updated."
+msgstr "ไม่สามารถอัปเดตชุดข้อมูลได้"
+
+#: superset/commands/dataset/exceptions.py:171
+msgid "Datasets could not be deleted."
+msgstr "ชุดข้อมูลไม่สามารถลบได้"
+
+#: superset/commands/dataset/exceptions.py:179
+msgid "Samples for dataset could not be retrieved."
+msgstr "ตัวอย่างสำหรับชุดข้อมูลไม่สามารถเรียกคืนได้"
+
+#: superset/commands/dataset/exceptions.py:183
+msgid "Changing this dataset is forbidden"
+msgstr "การเปลี่ยนชุดข้อมูลนี้เป็นสิ่งต้องห้าม"
+
+#: superset/commands/dataset/exceptions.py:187
+msgid "Import dataset failed for an unknown reason"
+msgstr "ชุดข้อมูลนำเข้าล้มเหลวด้วยเหตุผลที่ไม่ทราบสาเหตุ"
+
+#: superset/commands/dataset/exceptions.py:191
+msgid "You don't have access to this dataset."
+msgstr "คุณไม่สามารถเข้าถึงชุดข้อมูลนี้ได้"
+
+#: superset/commands/dataset/exceptions.py:195
+msgid "Dataset could not be duplicated."
+msgstr "ชุดข้อมูลไม่สามารถทำซ้ำได้"
+
+#: superset/commands/dataset/exceptions.py:199
+msgid "Data URI is not allowed."
+msgstr "ไม่อนุญาตให้ใช้ข้อมูล URI"
+
+#: superset/commands/dataset/exceptions.py:204
+msgid "The provided table was not found in the provided database"
+msgstr "ไม่พบตารางที่ให้ไว้ในฐานข้อมูลที่ให้ไว้"
+
+#: superset/commands/dataset/columns/exceptions.py:23
+msgid "Dataset column not found."
+msgstr "ไม่พบคอลัมน์ชุดข้อมูล"
+
+#: superset/commands/dataset/columns/exceptions.py:27
+msgid "Dataset column delete failed."
+msgstr "การลบคอลัมน์ชุดข้อมูลล้มเหลว"
+
+#: superset/commands/dataset/columns/exceptions.py:31
+#: superset/commands/dataset/metrics/exceptions.py:31
+msgid "Changing this dataset is forbidden."
+msgstr "การเปลี่ยนชุดข้อมูลนี้เป็นสิ่งต้องห้าม"
+
+#: superset/commands/dataset/metrics/exceptions.py:23
+msgid "Dataset metric not found."
+msgstr "ไม่พบตัวชี้วัดชุดข้อมูล"
+
+#: superset/commands/dataset/metrics/exceptions.py:27
+msgid "Dataset metric delete failed."
+msgstr "การลบชุดข้อมูลล้มเหลว"
+
+#: superset/commands/explore/get.py:85 superset/views/core.py:437
+msgid "Form data not found in cache, reverting to chart metadata."
+msgstr "ไม่พบข้อมูลแบบฟอร์มในแคชการกลับไปใช้เมตาดาต้าแผนภูมิ"
+
+#: superset/commands/explore/get.py:93 superset/views/core.py:443
+msgid "Form data not found in cache, reverting to dataset metadata."
+msgstr "ข้อมูลแบบฟอร์มไม่พบในแคชกลับไปเป็นเมตาดาต้าชุดข้อมูล"
+
+#: superset/commands/explore/get.py:119 superset/views/core.py:471
+msgid "[Missing Dataset]"
+msgstr "[ชุดข้อมูลที่ขาดหายไป]"
+
+#: superset/commands/query/exceptions.py:28
+msgid "Saved queries could not be deleted."
+msgstr "ไม่สามารถลบข้อความค้นหาที่บันทึกไว้ได้"
+
+#: superset/commands/query/exceptions.py:32
+msgid "Saved query not found."
+msgstr "ไม่พบคำถามที่บันทึกไว้"
+
+#: superset/commands/query/exceptions.py:36
+msgid "Import saved query failed for an unknown reason."
+msgstr "แบบสอบถามนำเข้าที่บันทึกล้มเหลวด้วยเหตุผลที่ไม่ทราบสาเหตุ"
+
+#: superset/commands/query/exceptions.py:40
+msgid "Saved query parameters are invalid."
+msgstr "พารามิเตอร์การสืบค้นที่บันทึกไว้นั้นไม่ถูกต้อง"
+
+#: superset/commands/report/alert.py:100
+#, python-format
+msgid "Alert query returned more than one row. %(num_rows)s rows returned"
+msgstr "การแจ้งเตือนแบบสอบถามส่งคืนมากกว่าหนึ่งแถว %(num_rows)s ส่งคืนแถว"
+
+#: superset/commands/report/alert.py:110
+#, python-format
+msgid ""
+"Alert query returned more than one column. %(num_cols)s columns returned"
+msgstr "การแจ้งเตือนแบบสอบถามส่งคืนมากกว่าหนึ่งคอลัมน์ %(num_cols)s คอลัมน์ส่งคืน"
+
+#: superset/commands/report/alert.py:178
+msgid "An error occurred when running alert query"
+msgstr "เกิดข้อผิดพลาดเมื่อเรียกใช้แบบสอบถามการแจ้งเตือน"
+
+#: superset/commands/report/create.py:153
+#, python-format
+msgid "Invalid tab ids: %s(tab_ids)"
+msgstr "ID แท็บไม่ถูกต้อง: %s (tab_ids)"
+
+#: superset/commands/report/exceptions.py:48
+msgid "Dashboard does not exist"
+msgstr "แผงควบคุมไม่มีอยู่จริง"
+
+#: superset/commands/report/exceptions.py:57
+msgid "Chart does not exist"
+msgstr "แผนภูมิไม่มีอยู่จริง"
+
+#: superset/commands/report/exceptions.py:66
+msgid "Database is required for alerts"
+msgstr "จำเป็นต้องมีฐานข้อมูลสำหรับการแจ้งเตือน"
+
+#: superset/commands/report/exceptions.py:75
+msgid "Type is required"
+msgstr "ต้องประเภท"
+
+#: superset/commands/report/exceptions.py:84
+msgid "Choose a chart or dashboard not both"
+msgstr "เลือกแผนภูมิหรือแดชบอร์ดไม่ใช่ทั้งสองอย่าง"
+
+#: superset/commands/report/exceptions.py:94
+msgid "Must choose either a chart or a dashboard"
+msgstr "ต้องเลือกแผนภูมิหรือแดชบอร์ด"
+
+#: superset/commands/report/exceptions.py:112
+#, python-format
+msgid ""
+"%(report_type)s schedule frequency exceeding limit. Please configure a "
+"schedule with a minimum interval of %(minimum_interval)d minutes per "
+"execution."
+msgstr ""
+"ความถี่กำหนดการ %(report_type)s เกินขีดจำกัด โปรดกำหนดค่ากำหนดการที่มีช่วงเวลาขั้นต่ำ "
+"%(minimum_interval)d นาทีต่อการดำเนินการหนึ่งครั้ง"
+
+#: superset/commands/report/exceptions.py:130
+msgid "Please save your chart first, then try creating a new email report."
+msgstr "โปรดบันทึกแผนภูมิของคุณก่อนจากนั้นลองสร้างรายงานอีเมลใหม่"
+
+#: superset/commands/report/exceptions.py:142
+msgid ""
+"Please save your dashboard first, then try creating a new email report."
+msgstr "โปรดบันทึกแดชบอร์ดของคุณก่อนจากนั้นลองสร้างรายงานอีเมลใหม่"
+
+#: superset/commands/report/exceptions.py:151
+msgid "Report Schedule parameters are invalid."
+msgstr "พารามิเตอร์กำหนดการรายงานไม่ถูกต้อง"
+
+#: superset/commands/report/exceptions.py:155
+msgid "Report Schedule could not be created."
+msgstr "ไม่สามารถสร้างตารางรายงานได้"
+
+#: superset/commands/report/exceptions.py:159
+msgid "Report Schedule could not be updated."
+msgstr "ไม่สามารถอัปเดตกำหนดการรายงาน"
+
+#: superset/commands/report/exceptions.py:164
+msgid "Report Schedule not found."
+msgstr "ไม่พบกำหนดการรายงาน"
+
+#: superset/commands/report/exceptions.py:168
+msgid "Report Schedule delete failed."
+msgstr "กำหนดการรายงานการลบล้มเหลว"
+
+#: superset/commands/report/exceptions.py:172
+msgid "Report Schedule log prune failed."
+msgstr "รายงานตารางรายงาน Prune ล้มเหลว"
+
+#: superset/commands/report/exceptions.py:176
+msgid "Report Schedule execution failed when generating a screenshot."
+msgstr "การดำเนินการตามกำหนดเวลารายงานล้มเหลวเมื่อสร้างภาพหน้าจอ"
+
+#: superset/commands/report/exceptions.py:180
+msgid "Report Schedule execution failed when generating a pdf."
+msgstr "การดำเนินการตามกำหนดเวลารายงานล้มเหลวเมื่อสร้าง PDF"
+
+#: superset/commands/report/exceptions.py:184
+msgid "Report Schedule execution failed when generating a csv."
+msgstr "การดำเนินการตามกำหนดเวลารายงานล้มเหลวเมื่อสร้าง CSV"
+
+#: superset/commands/report/exceptions.py:188
+msgid "Report Schedule execution failed when generating a dataframe."
+msgstr "รายงานการดำเนินการตามกำหนดเวลาล้มเหลวเมื่อสร้าง dataframe"
+
+#: superset/commands/report/exceptions.py:192
+msgid "Report Schedule execution got an unexpected error."
+msgstr "รายงานการดำเนินการตามกำหนดการมีข้อผิดพลาดที่ไม่คาดคิด"
+
+#: superset/commands/report/exceptions.py:197
+msgid "Report Schedule is still working, refusing to re-compute."
+msgstr "กำหนดการรายงานยังคงใช้งานได้โดยปฏิเสธที่จะคำนวณอีกครั้ง"
+
+#: superset/commands/report/exceptions.py:202
+msgid "Report Schedule reached a working timeout."
+msgstr "กำหนดเวลารายงานถึงเวลาทำงาน"
+
+#: superset/commands/report/exceptions.py:211
+#, python-format
+msgid "A report named \"%(name)s\" already exists"
+msgstr "มีรายงานชื่อ \"%(name)s\" อยู่แล้ว"
+
+#: superset/commands/report/exceptions.py:213
+#, python-format
+msgid "An alert named \"%(name)s\" already exists"
+msgstr "มีการแจ้งเตือนชื่อ \"%(name)s\" อยู่แล้ว"
+
+#: superset/commands/report/exceptions.py:219
+msgid "Resource already has an attached report."
+msgstr "ทรัพยากรมีรายงานที่แนบมาแล้ว"
+
+#: superset/commands/report/exceptions.py:224
+msgid "Alert query returned more than one row."
+msgstr "การแจ้งเตือนแบบสอบถามส่งคืนมากกว่าหนึ่งแถว"
+
+#: superset/commands/report/exceptions.py:229
+msgid "Alert validator config error."
+msgstr "การแจ้งเตือนข้อผิดพลาดการกำหนดค่าการตรวจสอบความถูกต้อง"
+
+#: superset/commands/report/exceptions.py:234
+msgid "Alert query returned more than one column."
+msgstr "การแจ้งเตือนแบบสอบถามส่งคืนมากกว่าหนึ่งคอลัมน์"
+
+#: superset/commands/report/exceptions.py:239
+msgid "Alert query returned a non-number value."
+msgstr "การแจ้งเตือนแบบสอบถามส่งคืนค่าที่ไม่ใช่จำนวน"
+
+#: superset/commands/report/exceptions.py:248
+msgid "Alert found an error while executing a query."
+msgstr "การแจ้งเตือนพบข้อผิดพลาดในขณะที่ดำเนินการค้นหา"
+
+#: superset/commands/report/exceptions.py:253
+msgid "A timeout occurred while executing the query."
+msgstr "การหมดเวลาเกิดขึ้นในขณะที่ดำเนินการค้นหา"
+
+#: superset/commands/report/exceptions.py:258
+msgid "A timeout occurred while taking a screenshot."
+msgstr "การหมดเวลาเกิดขึ้นในขณะที่ถ่ายภาพหน้าจอ"
+
+#: superset/commands/report/exceptions.py:263
+msgid "A timeout occurred while generating a csv."
+msgstr "การหมดเวลาเกิดขึ้นในขณะที่สร้าง CSV"
+
+#: superset/commands/report/exceptions.py:268
+msgid "A timeout occurred while generating a dataframe."
+msgstr "การหมดเวลาเกิดขึ้นในขณะที่สร้าง dataframe"
+
+#: superset/commands/report/exceptions.py:273
+msgid "Alert fired during grace period."
+msgstr "การแจ้งเตือนยิงในช่วงเวลาที่สง่างาม"
+
+#: superset/commands/report/exceptions.py:278
+msgid "Alert ended grace period."
+msgstr "การแจ้งเตือนสิ้นสุดระยะเวลาเกรซ"
+
+#: superset/commands/report/exceptions.py:283
+msgid "Alert on grace period"
+msgstr "ตื่นตัวในช่วงเวลาที่สง่างาม"
+
+#: superset/commands/report/exceptions.py:287
+msgid "Report Schedule state not found"
+msgstr "ไม่พบสถานะกำหนดเวลารายงาน"
+
+#: superset/commands/report/exceptions.py:292
+msgid "Report schedule system error"
+msgstr "รายงานข้อผิดพลาดของระบบกำหนดเวลา"
+
+#: superset/commands/report/exceptions.py:298
+msgid "Report schedule client error"
+msgstr "รายงานข้อผิดพลาดของลูกค้า"
+
+#: superset/commands/report/exceptions.py:302
+msgid "Report schedule unexpected error"
+msgstr "กำหนดการรายงานข้อผิดพลาดที่ไม่คาดคิด"
+
+#: superset/commands/report/exceptions.py:307
+msgid "Changing this report is forbidden"
+msgstr "การเปลี่ยนรายงานนี้เป็นสิ่งต้องห้าม"
+
+#: superset/commands/report/exceptions.py:311
+msgid "An error occurred while pruning logs "
+msgstr "เกิดข้อผิดพลาดในขณะที่บันทึกการตัดแต่ง"
+
+#: superset/commands/security/exceptions.py:25
+msgid "RLS Rule not found."
+msgstr "ไม่พบกฎ RLS"
+
+#: superset/commands/security/exceptions.py:29
+msgid "RLS rules could not be deleted."
+msgstr "ไม่สามารถลบกฎ RLS ได้"
+
+#: superset/commands/tag/exceptions.py:32
+msgid "Tag parameters are invalid."
+msgstr "พารามิเตอร์แท็กไม่ถูกต้อง"
+
+#: superset/commands/tag/exceptions.py:36
+msgid "Tag could not be created."
+msgstr "ไม่สามารถสร้างแท็กได้"
+
+#: superset/commands/tag/exceptions.py:40 superset/tags/exceptions.py:35
+msgid "Tag could not be updated."
+msgstr "ไม่สามารถอัปเดตแท็กได้"
+
+#: superset/commands/tag/exceptions.py:44
+msgid "Tag could not be deleted."
+msgstr "ไม่สามารถลบแท็กได้"
+
+#: superset/commands/tag/exceptions.py:48
+msgid "Tagged Object could not be deleted."
+msgstr "ไม่สามารถลบวัตถุที่ติดแท็กได้"
+
+#: superset/commands/temporary_cache/exceptions.py:29
+#: superset/dashboards/permalink/exceptions.py:27
+#: superset/explore/permalink/exceptions.py:27
+#: superset/key_value/exceptions.py:34
+msgid "An error occurred while creating the value."
+msgstr "เกิดข้อผิดพลาดในขณะที่สร้างค่า"
+
+#: superset/commands/temporary_cache/exceptions.py:33
+#: superset/dashboards/permalink/exceptions.py:31
+#: superset/explore/permalink/exceptions.py:31
+#: superset/key_value/exceptions.py:38
+msgid "An error occurred while accessing the value."
+msgstr "เกิดข้อผิดพลาดขณะเข้าถึงค่า"
+
+#: superset/commands/temporary_cache/exceptions.py:37
+#: superset/key_value/exceptions.py:42
+msgid "An error occurred while deleting the value."
+msgstr "เกิดข้อผิดพลาดในขณะที่ลบค่า"
+
+#: superset/commands/temporary_cache/exceptions.py:41
+#: superset/key_value/exceptions.py:46
+msgid "An error occurred while updating the value."
+msgstr "เกิดข้อผิดพลาดขณะอัปเดตค่า"
+
+#: superset/commands/temporary_cache/exceptions.py:45
+#: superset/key_value/exceptions.py:54
+msgid "You don't have permission to modify the value."
+msgstr "คุณไม่ได้รับอนุญาตให้แก้ไขค่า"
+
+#: superset/commands/temporary_cache/exceptions.py:49
+msgid "Resource was not found."
+msgstr "ไม่พบทรัพยากร"
+
+#: superset/common/query_actions.py:229
+#, python-format
+msgid "Invalid result type: %(result_type)s"
+msgstr "ประเภทผลลัพธ์ที่ไม่ถูกต้อง: %(result_type)s"
+
+#: superset/common/query_context_processor.py:152
+#, python-format
+msgid "Columns missing in dataset: %(invalid_columns)s"
+msgstr "คอลัมน์ที่ขาดหายไปในชุดข้อมูล: %(invalid_columns)s"
+
+#: superset/common/query_context_processor.py:555
+msgid "Time Grain must be specified when using Time Shift."
+msgstr "ต้องระบุธัญพืชเวลาเมื่อใช้การเปลี่ยนเวลา"
+
+#: superset/common/query_context_processor.py:784
+msgid "The chart does not exist"
+msgstr "แผนภูมิไม่มีอยู่จริง"
+
+#: superset/common/query_context_processor.py:790
+msgid "The chart datasource does not exist"
+msgstr "ไม่มีข้อมูลแผนภูมิ"
+
+#: superset/common/query_context_processor.py:807
+msgid "The chart query context does not exist"
+msgstr "บริบทการสืบค้นแผนภูมิไม่มีอยู่จริง"
+
+#: superset/common/query_object.py:290
+#, python-format
+msgid ""
+"Duplicate column/metric labels: %(labels)s. Please make sure all columns "
+"and metrics have a unique label."
+msgstr ""
+"คอลัมน์ที่ซ้ำกัน/ป้ายชี้วัด: %(labels)s "
+"โปรดตรวจสอบให้แน่ใจว่าคอลัมน์และตัวชี้วัดทั้งหมดมีฉลากที่ไม่ซ้ำกัน"
+
+#: superset/common/query_object.py:312
+#, python-format
+msgid ""
+"The following entries in `series_columns` are missing in `columns`: "
+"%(columns)s. "
+msgstr "รายการต่อไปนี้ใน `series_columns 'หายไปใน` คอลัมน์': %(columns)s"
+
+#: superset/common/query_object.py:435
+msgid "`operation` property of post processing object undefined"
+msgstr "`คุณสมบัติการดำเนินการ 'ของวัตถุการประมวลผลโพสต์ที่ไม่ได้กำหนด"
+
+#: superset/common/query_object.py:439
+#, python-format
+msgid "Unsupported post processing operation: %(operation)s"
+msgstr "การดำเนินการโพสต์โพสต์ที่ไม่ได้รับการสนับสนุน: %(operation)s"
+
+#: superset/connectors/sqla/models.py:757
+#, python-format
+msgid "Error in jinja expression in RLS filters: %(msg)s"
+msgstr "ข้อผิดพลาดในนิพจน์ jinja ในตัวกรอง RLS: %(msg)s"
+
+#: superset/connectors/sqla/models.py:1451
+#, python-format
+msgid "Error in jinja expression in fetch values predicate: %(msg)s"
+msgstr "ข้อผิดพลาดในนิพจน์ jinja ในค่าการดึงข้อมูลภาคแสดง: %(msg)s"
+
+#: superset/connectors/sqla/models.py:1489 superset/models/helpers.py:1083
+msgid "Virtual dataset query must be read-only"
+msgstr "แบบสอบถามชุดข้อมูลเสมือนต้องอ่านอย่างเดียว"
+
+#: superset/connectors/sqla/models.py:1664 superset/models/helpers.py:1222
+#: superset/models/helpers.py:1541
+#, python-format
+msgid "Metric '%(metric)s' does not exist"
+msgstr "ไม่มีตัวชี้วัด '%(metric)s'"
+
+#: superset/connectors/sqla/models.py:1753 superset/models/helpers.py:997
+msgid "Db engine did not return all queried columns"
+msgstr "DB Engine ไม่ได้ส่งคืนคอลัมน์ที่สอบถามทั้งหมด"
+
+#: superset/connectors/sqla/utils.py:102 superset/models/helpers.py:1061
+msgid "Virtual dataset query cannot be empty"
+msgstr "แบบสอบถามชุดข้อมูลเสมือนไม่สามารถว่างเปล่าได้"
+
+#: superset/connectors/sqla/utils.py:114
+msgid "Only `SELECT` statements are allowed"
+msgstr "อนุญาตให้ใช้คำสั่ง `select` เท่านั้น"
+
+#: superset/connectors/sqla/utils.py:122
+msgid "Only single queries supported"
+msgstr "รองรับการสืบค้นเดียวเท่านั้น"
+
+#: superset/connectors/sqla/views.py:77
+msgid "Columns"
+msgstr "คอลัมน์"
+
+#: superset/connectors/sqla/views.py:78
+msgid "Show Column"
+msgstr "คอลัมน์แสดง"
+
+#: superset/connectors/sqla/views.py:79
+msgid "Add Column"
+msgstr "เพิ่มคอลัมน์"
+
+#: superset/connectors/sqla/views.py:80
+msgid "Edit Column"
+msgstr "แก้ไขคอลัมน์"
+
+#: superset/connectors/sqla/views.py:111
+msgid ""
+"Whether to make this column available as a [Time Granularity] option, "
+"column has to be DATETIME or DATETIME-like"
+msgstr ""
+"ไม่ว่าจะทำให้คอลัมน์นี้เป็นตัวเลือก [time granularity] คอลัมน์จะต้องเป็น dateTime หรือ "
+"dateTime-like"
+
+#: superset/connectors/sqla/views.py:116
+msgid ""
+"Whether this column is exposed in the `Filters` section of the explore view."
+msgstr "ไม่ว่าคอลัมน์นี้จะถูกเปิดเผยในส่วน `ตัวกรอง 'ของมุมมองสำรวจหรือไม่"
+
+#: superset/connectors/sqla/views.py:120
+msgid ""
+"The data type that was inferred by the database. It may be necessary to "
+"input a type manually for expression-defined columns in some cases. In most "
+"case users should not need to alter this."
+msgstr ""
+"ประเภทข้อมูลที่อนุมานโดยฐานข้อมูล "
+"อาจจำเป็นต้องป้อนประเภทด้วยตนเองสำหรับคอลัมน์นิพจน์ที่กำหนดไว้ในบางกรณี "
+"ในกรณีส่วนใหญ่ผู้ใช้ไม่ควรเปลี่ยนสิ่งนี้"
+
+#: superset/connectors/sqla/views.py:160
+msgid "Column"
+msgstr "คอลัมน์"
+
+#: superset/connectors/sqla/views.py:161 superset/connectors/sqla/views.py:259
+msgid "Verbose Name"
+msgstr "ชื่อ Verbose"
+
+#: superset/connectors/sqla/views.py:162 superset/connectors/sqla/views.py:258
+#: superset/connectors/sqla/views.py:418 superset/views/chart/mixin.py:80
+msgid "Description"
+msgstr "คำอธิบาย"
+
+#: superset/connectors/sqla/views.py:163
+msgid "Groupable"
+msgstr "ที่สามารถจัดกลุ่มได้"
+
+#: superset/connectors/sqla/views.py:164
+msgid "Filterable"
+msgstr "สามารถกรองได้"
+
+#: superset/connectors/sqla/views.py:165 superset/connectors/sqla/views.py:262
+#: superset/connectors/sqla/views.py:404 superset/views/chart/mixin.py:86
+msgid "Table"
+msgstr "โต๊ะ"
+
+#: superset/connectors/sqla/views.py:166
+msgid "Expression"
+msgstr "การแสดงออก"
+
+#: superset/connectors/sqla/views.py:167
+msgid "Is temporal"
+msgstr "เป็นเรื่องชั่วคราว"
+
+#: superset/connectors/sqla/views.py:168
+msgid "Datetime Format"
+msgstr "รูปแบบ dateTime"
+
+#: superset/connectors/sqla/views.py:169 superset/connectors/sqla/views.py:260
+msgid "Type"
+msgstr "พิมพ์"
+
+#: superset/connectors/sqla/views.py:170
+msgid "Business Data Type"
+msgstr "ประเภทข้อมูลธุรกิจ"
+
+#: superset/connectors/sqla/views.py:186 superset/datasets/schemas.py:52
+msgid "Invalid date/timestamp format"
+msgstr "รูปแบบวันที่/การประทับเวลาไม่ถูกต้อง"
+
+#: superset/connectors/sqla/views.py:213
+msgid "Metrics"
+msgstr "ตัวชี้วัด"
+
+#: superset/connectors/sqla/views.py:214
+msgid "Show Metric"
+msgstr "แสดงตัวชี้วัด"
+
+#: superset/connectors/sqla/views.py:215
+msgid "Add Metric"
+msgstr "เพิ่มเมตริก"
+
+#: superset/connectors/sqla/views.py:216
+msgid "Edit Metric"
+msgstr "แก้ไขตัวชี้วัด"
+
+#: superset/connectors/sqla/views.py:257
+msgid "Metric"
+msgstr "ตัวชี้วัด"
+
+#: superset/connectors/sqla/views.py:261
+msgid "SQL Expression"
+msgstr "นิพจน์ SQL"
+
+#: superset/connectors/sqla/views.py:263
+msgid "D3 Format"
+msgstr "รูปแบบ d3"
+
+#: superset/connectors/sqla/views.py:264 superset/connectors/sqla/views.py:421
+#: superset/views/database/mixins.py:197
+msgid "Extra"
+msgstr "พิเศษ"
+
+#: superset/connectors/sqla/views.py:265
+msgid "Warning Message"
+msgstr "ข้อความเตือน"
+
+#: superset/connectors/sqla/views.py:299
+msgid "Tables"
+msgstr "โต๊ะ"
+
+#: superset/connectors/sqla/views.py:300
+msgid "Show Table"
+msgstr "แสดงตาราง"
+
+#: superset/connectors/sqla/views.py:301
+msgid "Import a table definition"
+msgstr "นำเข้าคำจำกัดความของตาราง"
+
+#: superset/connectors/sqla/views.py:302
+msgid "Edit Table"
+msgstr "แก้ไขตาราง"
+
+#: superset/connectors/sqla/views.py:335
+msgid ""
+"The list of charts associated with this table. By altering this datasource, "
+"you may change how these associated charts behave. Also note that charts "
+"need to point to a datasource, so this form will fail at saving if removing "
+"charts from a datasource. If you want to change the datasource for a chart, "
+"overwrite the chart from the 'explore view'"
+msgstr ""
+"รายการแผนภูมิที่เกี่ยวข้องกับตารางนี้ "
+"โดยการเปลี่ยนแปลงแหล่งข้อมูลนี้คุณอาจเปลี่ยนวิธีการที่แผนภูมิที่เกี่ยวข้องเหล่านี้ทำงาน "
+"โปรดทราบว่าแผนภูมิจำเป็นต้องชี้ไปที่แหล่งข้อมูลดังนั้นแบบฟอร์มนี้จะล้มเหลวในการบันทึกหากลบแผนภูมิจากแหล่งข้อมูล "
+"หากคุณต้องการเปลี่ยนแหล่งข้อมูลสำหรับแผนภูมิให้เขียนทับแผนภูมิจาก 'Explore View'"
+
+#: superset/connectors/sqla/views.py:344
+msgid "Timezone offset (in hours) for this datasource"
+msgstr "การชดเชยเขตเวลา (เป็นชั่วโมง) สำหรับแหล่งข้อมูลนี้"
+
+#: superset/connectors/sqla/views.py:345
+msgid "Name of the table that exists in the source database"
+msgstr "ชื่อตารางที่มีอยู่ในฐานข้อมูลต้นฉบับ"
+
+#: superset/connectors/sqla/views.py:346
+msgid "Schema, as used only in some databases like Postgres, Redshift and DB2"
+msgstr "Schema ซึ่งใช้เฉพาะในฐานข้อมูลบางอย่างเช่น Postgres, Redshift และ DB2"
+
+#: superset/connectors/sqla/views.py:353
+msgid ""
+"This fields acts a Superset view, meaning that Superset will run a query "
+"against this string as a subquery."
+msgstr ""
+"ฟิลด์นี้ทำหน้าที่เป็นมุมมอง superset ซึ่งหมายความว่า Superset "
+"จะเรียกใช้การสืบค้นกับสตริงนี้เป็นคำถามย่อย"
+
+#: superset/connectors/sqla/views.py:357
+msgid ""
+"Predicate applied when fetching distinct value to populate the filter "
+"control component. Supports jinja template syntax. Applies only when "
+"`Enable Filter Select` is on."
+msgstr ""
+"เพรดิเคตที่ใช้เมื่อดึงค่าที่แตกต่างกันเพื่อเติมส่วนประกอบควบคุมตัวกรอง รองรับไวยากรณ์เทมเพลต "
+"Jinja ใช้เฉพาะเมื่อ `เปิดใช้งานตัวกรองเลือก` เปิดอยู่"
+
+#: superset/connectors/sqla/views.py:363
+msgid ""
+"Redirects to this endpoint when clicking on the table from the table list"
+msgstr "เปลี่ยนเส้นทางไปยังจุดสิ้นสุดนี้เมื่อคลิกที่ตารางจากรายการตาราง"
+
+#: superset/connectors/sqla/views.py:367
+msgid ""
+"Whether to populate the filter's dropdown in the explore view's filter "
+"section with a list of distinct values fetched from the backend on the fly"
+msgstr "ไม่ว่าจะเติมข้อมูลแบบเลื่อนลงของตัวกรองในส่วนของตัวกรองมุมมองที่มีรายการของค่าที่แตกต่างที่ดึงมาจากแบ็กเอนด์ได้ทันที"
+
+#: superset/connectors/sqla/views.py:372
+msgid "Whether the table was generated by the 'Visualize' flow in SQL Lab"
+msgstr "ไม่ว่าตารางจะถูกสร้างขึ้นโดยการไหลของ 'ภาพ' ใน SQL Lab"
+
+#: superset/connectors/sqla/views.py:375
+msgid ""
+"A set of parameters that become available in the query using Jinja "
+"templating syntax"
+msgstr "ชุดพารามิเตอร์ที่พร้อมใช้งานในแบบสอบถามโดยใช้ไวยากรณ์ Jinja Templating ไวยากรณ์"
+
+#: superset/connectors/sqla/views.py:379
+msgid ""
+"Duration (in seconds) of the caching timeout for this table. A timeout of 0 "
+"indicates that the cache never expires. Note this defaults to the database "
+"timeout if undefined."
+msgstr ""
+"ระยะเวลา (ในไม่กี่วินาที) ของการหมดเวลาแคชสำหรับตารางนี้ การหมดเวลาของ 0 "
+"บ่งชี้ว่าแคชไม่เคยหมดอายุ หมายเหตุค่าเริ่มต้นนี้ไปยังการหมดเวลาฐานข้อมูลหากไม่ได้กำหนด"
+
+#: superset/connectors/sqla/views.py:391
+msgid ""
+"Allow column names to be changed to case insensitive format, if supported "
+"(e.g. Oracle, Snowflake)."
+msgstr ""
+"อนุญาตให้เปลี่ยนชื่อคอลัมน์เป็นรูปแบบที่ไม่รู้สึกตัวกรณีหากรองรับ (เช่น Oracle, Snowflake)"
+
+#: superset/connectors/sqla/views.py:395
+msgid ""
+"Datasets can have a main temporal column (main_dttm_col), but can also have "
+"secondary time columns. When this attribute is true, whenever the secondary "
+"columns are filtered, the same filter is applied to the main datetime "
+"column."
+msgstr ""
+"ชุดข้อมูลสามารถมีคอลัมน์ชั่วคราวหลัก (main_dttm_col) แต่ยังสามารถมีคอลัมน์เวลารอง "
+"เมื่อแอตทริบิวต์นี้เป็นจริงเมื่อใดก็ตามที่คอลัมน์รองจะถูกกรองตัวกรองเดียวกันจะถูกนำไปใช้กับคอลัมน์หลักวันหลัก"
+
+#: superset/connectors/sqla/views.py:403
+msgid "Associated Charts"
+msgstr "แผนภูมิที่เกี่ยวข้อง"
+
+#: superset/connectors/sqla/views.py:405
+msgid "Changed By"
+msgstr "เปลี่ยนโดย"
+
+#: superset/connectors/sqla/views.py:406 superset/connectors/sqla/views.py:407
+#: superset/templates/superset/import_dashboards.html:53
+#: superset/views/database/mixins.py:192
+msgid "Database"
+msgstr "ฐานข้อมูล"
+
+#: superset/connectors/sqla/views.py:408 superset/views/database/mixins.py:194
+msgid "Last Changed"
+msgstr "เปลี่ยนล่าสุด"
+
+#: superset/connectors/sqla/views.py:409
+msgid "Enable Filter Select"
+msgstr "เปิดใช้งานตัวกรองเลือก"
+
+#: superset/connectors/sqla/views.py:410
+msgid "Schema"
+msgstr "สคีมา"
+
+#: superset/connectors/sqla/views.py:411
+msgid "Default Endpoint"
+msgstr "จุดสิ้นสุดเริ่มต้น"
+
+#: superset/connectors/sqla/views.py:412
+msgid "Offset"
+msgstr "ชดเชย"
+
+#: superset/connectors/sqla/views.py:413 superset/views/chart/mixin.py:76
+msgid "Cache Timeout"
+msgstr "การหมดเวลาแคช"
+
+#: superset/connectors/sqla/views.py:414
+msgid "Table Name"
+msgstr "ชื่อตาราง"
+
+#: superset/connectors/sqla/views.py:415
+msgid "Fetch Values Predicate"
+msgstr "ดึงค่า predicate"
+
+#: superset/connectors/sqla/views.py:416 superset/views/chart/mixin.py:82
+#: superset/views/dashboard/mixin.py:81
+msgid "Owners"
+msgstr "เจ้าของ"
+
+#: superset/connectors/sqla/views.py:417
+msgid "Main Datetime Column"
+msgstr "คอลัมน์หลัก dateTime"
+
+#: superset/connectors/sqla/views.py:419
+msgid "SQL Lab View"
+msgstr "SQL Lab View"
+
+#: superset/connectors/sqla/views.py:420
+msgid "Template parameters"
+msgstr "พารามิเตอร์เทมเพลต"
+
+#: superset/connectors/sqla/views.py:422 superset/views/dashboard/mixin.py:85
+#: superset/views/dashboard/views.py:189 superset/views/database/mixins.py:203
+msgid "Modified"
+msgstr "ดัดแปลง"
+
+#: superset/connectors/sqla/views.py:443
+msgid ""
+"The table was created. As part of this two-phase configuration process, you "
+"should now click the edit button by the new table to configure it."
+msgstr ""
+"ตารางถูกสร้างขึ้น "
+"เป็นส่วนหนึ่งของกระบวนการกำหนดค่าสองเฟสนี้คุณควรคลิกปุ่มแก้ไขด้วยตารางใหม่เพื่อกำหนดค่า"
+
+#: superset/css_templates/api.py:154
+#, python-format
+msgid "Deleted %(num)d css template"
+msgid_plural "Deleted %(num)d css templates"
+msgstr[0] ""
+
+#: superset/dashboards/api.py:428
+#, python-format
+msgid "Dataset schema is invalid, caused by: %(error)s"
+msgstr "ชุดข้อมูลชุดข้อมูลไม่ถูกต้องเกิดจาก: %(error)s"
+
+#: superset/dashboards/api.py:486
+#, python-format
+msgid "Tab schema is invalid, caused by: %(error)s"
+msgstr "แท็บสคีมาไม่ถูกต้องเกิดจาก: %(error)s"
+
+#: superset/dashboards/api.py:795
+#, python-format
+msgid "Deleted %(num)d dashboard"
+msgid_plural "Deleted %(num)d dashboards"
+msgstr[0] ""
+
+#: superset/dashboards/filters.py:40
+msgid "Title or Slug"
+msgstr "ชื่อหรือกระสุน"
+
+#: superset/dashboards/filters.py:206
+msgid "Role"
+msgstr "บทบาท"
+
+#: superset/dashboards/permalink/exceptions.py:23
+#: superset/explore/permalink/exceptions.py:23
+msgid "Invalid state."
+msgstr "สถานะไม่ถูกต้อง"
+
+#: superset/databases/decorators.py:47
+msgid "Table name undefined"
+msgstr "ชื่อตารางที่ไม่ได้กำหนด"
+
+#: superset/databases/filters.py:84
+msgid "Upload Enabled"
+msgstr "เปิดใช้งาน"
+
+#: superset/databases/schemas.py:201
+msgid ""
+"Invalid connection string, a valid string usually follows: backend+driver://"
+"user:password@database-host/database-name"
+msgstr ""
+"สตริงการเชื่อมต่อที่ไม่ถูกต้องสตริงที่ถูกต้องมักจะติดตาม: แบ็กเอนด์+ไดรเวอร์: // ผู้ใช้: "
+"รหัสผ่าน@database-host/database-name"
+
+#: superset/databases/schemas.py:236 superset/databases/schemas.py:251
+#, python-format
+msgid "Field cannot be decoded by JSON. %(msg)s"
+msgstr "JSON ไม่สามารถถอดรหัสฟิลด์ได้ %(msg)s"
+
+#: superset/databases/schemas.py:259
+#, python-format
+msgid ""
+"The metadata_params in Extra field is not configured correctly. The key "
+"%(key)s is invalid."
+msgstr ""
+"metadata_params ในฟิลด์พิเศษไม่ได้รับการกำหนดค่าอย่างถูกต้อง กุญแจ %(key)s ไม่ถูกต้อง"
+
+#: superset/databases/schemas.py:326
+msgid ""
+"An engine must be specified when passing individual parameters to a "
+"database."
+msgstr "ต้องระบุเครื่องยนต์เมื่อส่งพารามิเตอร์แต่ละตัวไปยังฐานข้อมูล"
+
+#: superset/databases/schemas.py:339
+msgid ""
+"Engine spec \"InvalidEngine\" does not support being configured via "
+"individual parameters."
+msgstr ""
+"ข้อมูลจำเพาะของเครื่องยนต์ \"InvalidEngine\" ไม่รองรับการกำหนดค่าผ่านพารามิเตอร์แต่ละตัว"
+
+#: superset/databases/schemas.py:1100
+msgid "File extension is not allowed."
+msgstr "ไม่อนุญาตให้ขยายไฟล์"
+
+#: superset/databases/schemas.py:1250
+msgid "File size exceeds the maximum allowed size."
+msgstr "ขนาดไฟล์เกินขนาดที่อนุญาตสูงสุด"
+
+#: superset/datasets/api.py:793
+#, python-format
+msgid "Deleted %(num)d dataset"
+msgid_plural "Deleted %(num)d datasets"
+msgstr[0] ""
+
+#: superset/datasets/filters.py:26
+msgid "Null or Empty"
+msgstr "ว่างหรือว่างเปล่า"
+
+#: superset/db_engine_specs/presto.py:1374
+msgid "Unknown Presto Error"
+msgstr "ข้อผิดพลาดของ Presto ที่ไม่รู้จัก"
+
+#: superset/explore/exceptions.py:45
+msgid "Samples for datasource could not be retrieved."
+msgstr "ตัวอย่างสำหรับแหล่งข้อมูลไม่สามารถเรียกคืนได้"
+
+#: superset/explore/exceptions.py:49
+msgid "Changing this datasource is forbidden"
+msgstr "การเปลี่ยนแหล่งข้อมูลนี้เป็นสิ่งต้องห้าม"
+
+#: superset/key_value/exceptions.py:30
+msgid "An error occurred while parsing the key."
+msgstr "เกิดข้อผิดพลาดในขณะที่แยกวิเคราะห์คีย์"
+
+#: superset/key_value/exceptions.py:50
+msgid "An error occurred while upserting the value."
+msgstr "เกิดข้อผิดพลาดในขณะที่เพิ่มค่า"
+
+#: superset/key_value/exceptions.py:62
+msgid "Unable to encode value"
+msgstr "ไม่สามารถเข้ารหัสค่าได้"
+
+#: superset/key_value/exceptions.py:66
+msgid "Unable to decode value"
+msgstr "ไม่สามารถถอดรหัสค่าได้"
+
+#: superset/key_value/utils.py:60
+msgid "Invalid permalink key"
+msgstr "คีย์ลิงก์ถาวรที่ไม่ถูกต้อง"
+
+#: superset/models/helpers.py:1048
+#, python-format
+msgid "Error while rendering virtual dataset query: %(msg)s"
+msgstr "ข้อผิดพลาดในขณะที่แสดงการค้นหาชุดข้อมูลเสมือนจริง: %(msg)s"
+
+#: superset/models/helpers.py:1057
+msgid "Virtual dataset query cannot consist of multiple statements"
+msgstr "แบบสอบถามชุดข้อมูลเสมือนจริงไม่สามารถประกอบด้วยหลายข้อความ"
+
+#: superset/models/helpers.py:1514
+msgid ""
+"Datetime column not provided as part table configuration and is required by "
+"this type of chart"
+msgstr ""
+"คอลัมน์ DateTime "
+"ไม่ได้จัดเตรียมไว้เป็นการกำหนดค่าตารางส่วนและจำเป็นต้องใช้โดยแผนภูมิประเภทนี้"
+
+#: superset/models/helpers.py:1520
+msgid "Empty query?"
+msgstr "แบบสอบถามเปล่า?"
+
+#: superset/models/helpers.py:1595
+#, python-format
+msgid "Unknown column used in orderby: %(col)s"
+msgstr "คอลัมน์ที่ไม่รู้จักใช้ใน orderby: %(col)s"
+
+#: superset/models/helpers.py:1676
+#, python-format
+msgid "Time column \"%(col)s\" does not exist in dataset"
+msgstr "คอลัมน์เวลา \"%(col)s\" ไม่มีอยู่ในชุดข้อมูล"
+
+#: superset/models/helpers.py:1815
+msgid "error_message"
+msgstr "ข้อผิดพลาด _message"
+
+#: superset/models/helpers.py:1827
+msgid "Filter value list cannot be empty"
+msgstr "รายการค่าตัวกรองจะไม่ว่างเปล่า"
+
+#: superset/models/helpers.py:1860
+msgid "Must specify a value for filters with comparison operators"
+msgstr "ต้องระบุค่าสำหรับตัวกรองที่มีตัวดำเนินการเปรียบเทียบ"
+
+#: superset/models/helpers.py:1915
+#, python-format
+msgid "Invalid filter operation type: %(op)s"
+msgstr "ประเภทการทำงานของตัวกรองที่ไม่ถูกต้อง: %(op)s"
+
+#: superset/models/helpers.py:1925
+#, python-format
+msgid "Error in jinja expression in WHERE clause: %(msg)s"
+msgstr "ข้อผิดพลาดในนิพจน์ jinja ในที่ประโยค: %(msg)s"
+
+#: superset/models/helpers.py:1944
+#, python-format
+msgid "Error in jinja expression in HAVING clause: %(msg)s"
+msgstr "ข้อผิดพลาดในนิพจน์ jinja ในการมีประโยค: %(msg)s"
+
+#: superset/models/helpers.py:2091
+msgid "Database does not support subqueries"
+msgstr "ฐานข้อมูลไม่รองรับ subqueries"
+
+#: superset/queries/saved_queries/api.py:243
+#, python-format
+msgid "Deleted %(num)d saved query"
+msgid_plural "Deleted %(num)d saved queries"
+msgstr[0] ""
+
+#: superset/reports/api.py:513
+#, python-format
+msgid "Deleted %(num)d report schedule"
+msgid_plural "Deleted %(num)d report schedules"
+msgstr[0] ""
+
+#: superset/reports/schemas.py:214 superset/reports/schemas.py:219
+#: superset/reports/schemas.py:224 superset/reports/schemas.py:358
+#: superset/reports/schemas.py:364
+msgid "Value must be greater than 0"
+msgstr "ค่าจะต้องมากกว่า 0"
+
+#: superset/reports/schemas.py:238 superset/reports/schemas.py:376
+msgid "Custom width of the screenshot in pixels"
+msgstr "ความกว้างที่กำหนดเองของภาพหน้าจอในพิกเซล"
+
+#: superset/reports/schemas.py:258 superset/reports/schemas.py:396
+#, python-format
+msgid "Screenshot width must be between %(min)spx and %(max)spx"
+msgstr "ความกว้างของภาพหน้าจอจะต้องอยู่ระหว่าง %(min)spx และ %(max)spx"
+
+#: superset/reports/schemas.py:353
+msgid "Value must be 0 or greater"
+msgstr "ค่าจะต้องเป็น 0 หรือมากกว่า"
+
+#: superset/row_level_security/api.py:364
+#, python-format
+msgid "Deleted %(num)d rules"
+msgid_plural "Deleted %(num)d rules"
+msgstr[0] ""
+
+#: superset/security/analytics_db_safety.py:52
+#, python-format
+msgid "%(dialect)s cannot be used as a data source for security reasons."
+msgstr "%(dialect)s ไม่สามารถใช้เป็นแหล่งข้อมูลด้วยเหตุผลด้านความปลอดภัย"
+
+#: superset/security/manager.py:2276
+msgid "Guest user cannot modify chart payload"
+msgstr "ผู้ใช้เกสต์ไม่สามารถปรับเปลี่ยนแผนภูมิเพย์โหลดได้"
+
+#: superset/security/manager.py:2695
+#, python-format
+msgid "You don't have the rights to alter %(resource)s"
+msgstr "คุณไม่มีสิทธิ์ในการเปลี่ยนแปลง %(resource)s"
+
+#: superset/sqllab/exceptions.py:66
+#, python-format
+msgid "Failed to execute %(query)s"
+msgstr "ล้มเหลวในการดำเนินการ %(query)s"
+
+#: superset/sqllab/query_render.py:98
+#, python-format
+msgid "The parameter %(parameters)s in your query is undefined."
+msgid_plural ""
+"The following parameters in your query are undefined: %(parameters)s."
+msgstr[0] ""
+
+#: superset/tags/exceptions.py:30
+msgid "Tag name is invalid (cannot contain ':')"
+msgstr "ชื่อแท็กไม่ถูกต้อง (ไม่สามารถมีได้ ':')"
+
+#: superset/tags/exceptions.py:39
+msgid "Tag could not be found."
+msgstr "ไม่พบแท็ก"
+
+#: superset/tags/filters.py:40
+msgid "Is custom tag"
+msgstr "เป็นแท็กที่กำหนดเอง"
+
+#: superset/tags/filters.py:57 superset/tags/filters.py:80
+msgid "Is tagged"
+msgstr "ถูกแท็ก"
+
+#: superset/tasks/exceptions.py:24
+msgid "Scheduled task executor not found"
+msgstr "ไม่พบผู้ดำเนินการงานตามกำหนดเวลา"
+
+#: superset/templates/appbuilder/general/widgets/base_list.html:56
+msgid "Record Count"
+msgstr "จำนวนบันทึก"
+
+#: superset/templates/appbuilder/general/widgets/base_list.html:65
+msgid "No records found"
+msgstr "ไม่พบบันทึก"
+
+#: superset/templates/appbuilder/general/widgets/search.html:25
+msgid "Filter List"
+msgstr "รายการกรอง"
+
+#: superset/templates/appbuilder/general/widgets/search.html:41
+msgid "Search"
+msgstr "ค้นหา"
+
+#: superset/templates/appbuilder/general/widgets/search.html:58
+msgid "Refresh"
+msgstr "รีเฟรช"
+
+#: superset/templates/superset/import_dashboards.html:21
+msgid "Import dashboards"
+msgstr "นำเข้าแดชบอร์ด"
+
+#: superset/templates/superset/import_dashboards.html:26
+msgid "Import Dashboard(s)"
+msgstr "นำเข้าแดชบอร์ด"
+
+#: superset/templates/superset/import_dashboards.html:37
+msgid "File"
+msgstr "ไฟล์"
+
+#: superset/templates/superset/import_dashboards.html:47
+msgid "Choose File"
+msgstr "เลือกไฟล์"
+
+#: superset/templates/superset/import_dashboards.html:63
+msgid "Upload"
+msgstr "อัพโหลด"
+
+#: superset/templates/superset/fab_overrides/list_with_checkboxes.html:82
+msgid "Use the edit button to change this field"
+msgstr "ใช้ปุ่มแก้ไขเพื่อเปลี่ยนฟิลด์นี้"
+
+#: superset/templates/superset/models/database/macros.html:23
+msgid "Test Connection"
+msgstr "ทดสอบการเชื่อมต่อ"
+
+#: superset/utils/date_parser.py:410
+msgid "Unable to calculate such a date delta"
+msgstr "ไม่สามารถคำนวณวันที่เดลต้าดังกล่าวได้"
+
+#: superset/utils/date_parser.py:488
+#, python-format
+msgid "Unable to find such a holiday: [%(holiday)s]"
+msgstr "ไม่สามารถหาวันหยุดดังกล่าวได้: [%(holiday)s]"
+
+#: superset/utils/encrypt.py:128
+#, python-format
+msgid "DB column %(col_name)s has unknown type: %(value_type)s"
+msgstr "คอลัมน์ db %(col_name)s มีประเภทที่ไม่รู้จัก: %(value_type)s"
+
+#: superset/utils/pandas_postprocessing/boxplot.py:88
+msgid ""
+"percentiles must be a list or tuple with two numeric values, of which the "
+"first is lower than the second value"
+msgstr "เปอร์เซ็นไทล์จะต้องเป็นรายการหรือ tuple ที่มีค่าตัวเลขสองค่าซึ่งค่าแรกต่ำกว่าค่าที่สอง"
+
+#: superset/utils/pandas_postprocessing/compare.py:53
+msgid "`compare_columns` must have the same length as `source_columns`."
+msgstr "`compare_columns 'ต้องมีความยาวเท่ากับ` source_columns`"
+
+#: superset/utils/pandas_postprocessing/compare.py:57
+msgid "`compare_type` must be `difference`, `percentage` or `ratio`"
+msgstr "`compare_type` ต้องเป็น` ความแตกต่าง ', `เปอร์เซ็นต์' หรือ 'อัตราส่วน'"
+
+#: superset/utils/pandas_postprocessing/contribution.py:66
+#, python-format
+msgid ""
+"Column \"%(column)s\" is not numeric or does not exists in the query "
+"results."
+msgstr "คอลัมน์ \"%(column)s\" ไม่ใช่ตัวเลขหรือไม่มีอยู่ในผลลัพธ์การสืบค้น"
+
+#: superset/utils/pandas_postprocessing/contribution.py:77
+msgid ""
+"`rename_columns` must have the same length as `columns` + "
+"`time_shift_columns`."
+msgstr "`rename_columns 'ต้องมีความยาวเท่ากับ` คอลัมน์' + `time_shift_columns '"
+
+#: superset/utils/pandas_postprocessing/cum.py:55
+#, python-format
+msgid "Invalid cumulative operator: %(operator)s"
+msgstr "ผู้ดำเนินการสะสมไม่ถูกต้อง: %(operator)s"
+
+#: superset/utils/pandas_postprocessing/geography.py:49
+msgid "Invalid geohash string"
+msgstr "สตริง geohash ที่ไม่ถูกต้อง"
+
+#: superset/utils/pandas_postprocessing/geography.py:76
+msgid "Invalid longitude/latitude"
+msgstr "ลองจิจูด/ละติจูดที่ไม่ถูกต้อง"
+
+#: superset/utils/pandas_postprocessing/geography.py:118
+msgid "Invalid geodetic string"
+msgstr "สตริง geodetic ที่ไม่ถูกต้อง"
+
+#: superset/utils/pandas_postprocessing/pivot.py:66
+msgid "Pivot operation requires at least one index"
+msgstr "การดำเนินการหมุนต้องใช้ดัชนีอย่างน้อยหนึ่งดัชนี"
+
+#: superset/utils/pandas_postprocessing/pivot.py:70
+msgid "Pivot operation must include at least one aggregate"
+msgstr "การดำเนินการหมุนจะต้องมีการรวมอย่างน้อยหนึ่งครั้ง"
+
+#: superset/utils/pandas_postprocessing/prophet.py:65
+msgid "`prophet` package not installed"
+msgstr "ไม่ติดตั้งแพ็คเกจ `Prophet`"
+
+#: superset/utils/pandas_postprocessing/prophet.py:118
+msgid "Time grain missing"
+msgstr "เวลาหายไป"
+
+#: superset/utils/pandas_postprocessing/prophet.py:121
+#, python-format
+msgid "Unsupported time grain: %(time_grain)s"
+msgstr "เวลาที่ไม่ได้รับการสนับสนุน: %(time_grain)s"
+
+#: superset/utils/pandas_postprocessing/prophet.py:130
+msgid "Periods must be a whole number"
+msgstr "ระยะเวลาจะต้องเป็นจำนวนทั้งหมด"
+
+#: superset/utils/pandas_postprocessing/prophet.py:133
+msgid "Confidence interval must be between 0 and 1 (exclusive)"
+msgstr "ช่วงความมั่นใจจะต้องอยู่ระหว่าง 0 ถึง 1 (พิเศษ)"
+
+#: superset/utils/pandas_postprocessing/prophet.py:136
+msgid "DataFrame must include temporal column"
+msgstr "DataFrame ต้องมีคอลัมน์ชั่วคราว"
+
+#: superset/utils/pandas_postprocessing/prophet.py:138
+msgid "DataFrame include at least one series"
+msgstr "DataFrame รวมซีรีส์อย่างน้อยหนึ่งชุด"
+
+#: superset/utils/pandas_postprocessing/rename.py:53
+msgid "Label already exists"
+msgstr "มีฉลากอยู่แล้ว"
+
+#: superset/utils/pandas_postprocessing/resample.py:43
+msgid "Resample operation requires DatetimeIndex"
+msgstr "การดำเนินการ Resample ต้องใช้ DateTimeIndex"
+
+#: superset/utils/pandas_postprocessing/resample.py:46
+msgid "Resample method should be in "
+msgstr "วิธีการเรซูเม่ควรอยู่ใน"
+
+#: superset/utils/pandas_postprocessing/rolling.py:67
+msgid "Undefined window for rolling operation"
+msgstr "หน้าต่างที่ไม่ได้กำหนดสำหรับการดำเนินการกลิ้ง"
+
+#: superset/utils/pandas_postprocessing/rolling.py:69
+msgid "Window must be > 0"
+msgstr "หน้าต่างต้องเป็น> 0"
+
+#: superset/utils/pandas_postprocessing/rolling.py:84
+#, python-format
+msgid "Invalid rolling_type: %(type)s"
+msgstr "Rolling_type ไม่ถูกต้อง: %(type)s"
+
+#: superset/utils/pandas_postprocessing/rolling.py:90
+#, python-format
+msgid "Invalid options for %(rolling_type)s: %(options)s"
+msgstr "ตัวเลือกที่ไม่ถูกต้องสำหรับ %(rolling_type)s: %(options)s"
+
+#: superset/utils/pandas_postprocessing/utils.py:127
+msgid "Referenced columns not available in DataFrame."
+msgstr "คอลัมน์อ้างอิงที่ไม่สามารถใช้ได้ใน DataFrame"
+
+#: superset/utils/pandas_postprocessing/utils.py:153
+#, python-format
+msgid "Column referenced by aggregate is undefined: %(column)s"
+msgstr "คอลัมน์ที่อ้างอิงโดยการรวมไม่ได้กำหนด: %(column)s"
+
+#: superset/utils/pandas_postprocessing/utils.py:160
+#, python-format
+msgid "Operator undefined for aggregator: %(name)s"
+msgstr "ผู้ประกอบการที่ไม่ได้กำหนดสำหรับผู้รวบรวม: %(name)s"
+
+#: superset/utils/pandas_postprocessing/utils.py:172
+#, python-format
+msgid "Invalid numpy function: %(operator)s"
+msgstr "ฟังก์ชั่น numpy ไม่ถูกต้อง: %(operator)s"
+
+#: superset/views/api.py:126
+#, python-format
+msgid "Unexpected time range: %(error)s"
+msgstr "ช่วงเวลาที่ไม่คาดคิด: %(error)s"
+
+#: superset/views/base_api.py:147
+msgid "Is favorite"
+msgstr "เป็นที่ชื่นชอบ"
+
+#: superset/views/core.py:289
+msgid "You don't have the rights to download as csv"
+msgstr "คุณไม่มีสิทธิ์ดาวน์โหลดเป็น CSV"
+
+#: superset/views/core.py:420
+msgid "Error: permalink state not found"
+msgstr "ข้อผิดพลาด: ไม่พบสถานะ Permalink"
+
+#: superset/views/core.py:509
+msgid "You don't have the rights to alter this chart"
+msgstr "คุณไม่มีสิทธิ์ในการเปลี่ยนแปลงแผนภูมินี้"
+
+#: superset/views/core.py:515
+msgid "You don't have the rights to create a chart"
+msgstr "คุณไม่มีสิทธิ์สร้างแผนภูมิ"
+
+#: superset/views/core.py:570
+#, python-format
+msgid "Explore - %(table)s"
+msgstr "สำรวจ - %(table)s"
+
+#: superset/views/core.py:572
+msgid "Explore"
+msgstr "สำรวจ"
+
+#: superset/views/core.py:622
+msgid "Chart [{}] has been saved"
+msgstr "แผนภูมิ [{}] ได้รับการบันทึกแล้ว"
+
+#: superset/views/core.py:627
+msgid "Chart [{}] has been overwritten"
+msgstr "แผนภูมิ [{}] ถูกเขียนทับ"
+
+#: superset/views/core.py:647
+msgid "You don't have the rights to alter this dashboard"
+msgstr "คุณไม่มีสิทธิ์ในการเปลี่ยนแดชบอร์ดนี้"
+
+#: superset/views/core.py:652
+msgid "Chart [{}] was added to dashboard [{}]"
+msgstr "แผนภูมิ [{}] ถูกเพิ่มลงในแดชบอร์ด [{}]"
+
+#: superset/views/core.py:663
+msgid "You don't have the rights to create a dashboard"
+msgstr "คุณไม่มีสิทธิ์ในการสร้างแดชบอร์ด"
+
+#: superset/views/core.py:672
+msgid "Dashboard [{}] just got created and chart [{}] was added to it"
+msgstr "Dashboard [{}] เพิ่งถูกสร้างขึ้นและแผนภูมิ [{}] ถูกเพิ่มเข้าไปในนั้น"
+
+#: superset/views/core.py:841
+msgid "permalink state not found"
+msgstr "ไม่พบสถานะ Permalink"
+
+#: superset/views/dynamic_plugins.py:47
+msgid "A human-friendly name"
+msgstr "ชื่อที่เป็นมิตรกับมนุษย์"
+
+#: superset/views/dynamic_plugins.py:48
+msgid ""
+"Used internally to identify the plugin. Should be set to the package name "
+"from the pluginʼs package.json"
+msgstr "ใช้ภายในเพื่อระบุปลั๊กอิน ควรตั้งค่าเป็นชื่อแพ็คเกจจาก plugin's package.json"
+
+#: superset/views/dynamic_plugins.py:52
+msgid ""
+"A full URL pointing to the location of the built plugin (could be hosted on "
+"a CDN for example)"
+msgstr "URL เต็มรูปแบบที่ชี้ไปที่ตำแหน่งของปลั๊กอินที่สร้างขึ้น (สามารถโฮสต์บน CDN เป็นต้นได้)"
+
+#: superset/views/dynamic_plugins.py:58
+msgid "Custom Plugins"
+msgstr "ปลั๊กอินที่กำหนดเอง"
+
+#: superset/views/dynamic_plugins.py:59
+msgid "Custom Plugin"
+msgstr "ปลั๊กอินที่กำหนดเอง"
+
+#: superset/views/dynamic_plugins.py:60
+msgid "Add a Plugin"
+msgstr "เพิ่มปลั๊กอิน"
+
+#: superset/views/dynamic_plugins.py:61
+msgid "Edit Plugin"
+msgstr "แก้ไขปลั๊กอิน"
+
+#: superset/views/utils.py:258
+msgid "The dataset associated with this chart no longer exists"
+msgstr "ชุดข้อมูลที่เกี่ยวข้องกับแผนภูมินี้ไม่มีอยู่อีกต่อไป"
+
+#: superset/views/utils.py:478
+msgid "Could not determine datasource type"
+msgstr "ไม่สามารถกำหนดประเภทแหล่งข้อมูลได้"
+
+#: superset/views/utils.py:494
+msgid "Could not find viz object"
+msgstr "ไม่พบวัตถุ ได้แก่"
+
+#: superset/views/chart/mixin.py:25 superset/views/dashboard/mixin.py:80
+msgid "Charts"
+msgstr "แผนภูมิ"
+
+#: superset/views/chart/mixin.py:26
+msgid "Show Chart"
+msgstr "แสดงแผนภูมิ"
+
+#: superset/views/chart/mixin.py:27
+msgid "Add Chart"
+msgstr "เพิ่มแผนภูมิ"
+
+#: superset/views/chart/mixin.py:28
+msgid "Edit Chart"
+msgstr "แก้ไขแผนภูมิ"
+
+#: superset/views/chart/mixin.py:63
+msgid ""
+"These parameters are generated dynamically when clicking the save or "
+"overwrite button in the explore view. This JSON object is exposed here for "
+"reference and for power users who may want to alter specific parameters."
+msgstr ""
+"พารามิเตอร์เหล่านี้ถูกสร้างขึ้นแบบไดนามิกเมื่อคลิกปุ่มบันทึกหรือเขียนทับในมุมมองสำรวจ วัตถุ JSON "
+"นี้ถูกเปิดเผยที่นี่เพื่อการอ้างอิงและสำหรับผู้ใช้พลังงานที่อาจต้องการเปลี่ยนพารามิเตอร์เฉพาะ"
+
+#: superset/views/chart/mixin.py:69
+msgid ""
+"Duration (in seconds) of the caching timeout for this chart. Note this "
+"defaults to the datasource/table timeout if undefined."
+msgstr ""
+"ระยะเวลา (ในไม่กี่วินาที) ของการหมดเวลาแคชสำหรับแผนภูมินี้ หมายเหตุค่าเริ่มต้นนี้ไปยัง "
+"DataSource/Table Timeout หากไม่ได้กำหนด"
+
+#: superset/views/chart/mixin.py:77 superset/views/dashboard/mixin.py:84
+#: superset/views/dashboard/views.py:188 superset/views/database/mixins.py:193
+msgid "Creator"
+msgstr "ผู้สร้าง"
+
+#: superset/views/chart/mixin.py:78 superset/views/dashboard/mixin.py:24
+msgid "Dashboards"
+msgstr "แดชบอร์ด"
+
+#: superset/views/chart/mixin.py:79
+msgid "Datasource"
+msgstr "แหล่งข้อมูล"
+
+#: superset/views/chart/mixin.py:81
+msgid "Last Modified"
+msgstr "แก้ไขล่าสุด"
+
+#: superset/views/chart/mixin.py:83
+msgid "Parameters"
+msgstr "พารามิเตอร์"
+
+#: superset/views/chart/mixin.py:84 superset/views/chart/views.py:96
+msgid "Chart"
+msgstr "แผนภูมิ"
+
+#: superset/views/chart/mixin.py:85
+msgid "Name"
+msgstr "ชื่อ"
+
+#: superset/views/chart/mixin.py:87
+msgid "Visualization Type"
+msgstr "ประเภทการสร้างภาพ"
+
+#: superset/views/dashboard/mixin.py:25
+msgid "Show Dashboard"
+msgstr "แสดงแดชบอร์ด"
+
+#: superset/views/dashboard/mixin.py:26
+msgid "Add Dashboard"
+msgstr "เพิ่มแดชบอร์ด"
+
+#: superset/views/dashboard/mixin.py:27
+msgid "Edit Dashboard"
+msgstr "แก้ไขแดชบอร์ด"
+
+#: superset/views/dashboard/mixin.py:46
+msgid ""
+"This json object describes the positioning of the widgets in the dashboard. "
+"It is dynamically generated when adjusting the widgets size and positions "
+"by using drag & drop in the dashboard view"
+msgstr ""
+"วัตถุ JSON นี้อธิบายการวางตำแหน่งของวิดเจ็ตในแผงควบคุม "
+"มันถูกสร้างขึ้นแบบไดนามิกเมื่อปรับขนาดวิดเจ็ตและตำแหน่งโดยใช้การลากและวางในมุมมองแดชบอร์ด"
+
+#: superset/views/dashboard/mixin.py:52
+msgid ""
+"The CSS for individual dashboards can be altered here, or in the dashboard "
+"view where changes are immediately visible"
+msgstr ""
+"CSS "
+"สำหรับแดชบอร์ดแต่ละตัวสามารถเปลี่ยนแปลงได้ที่นี่หรือในมุมมองแดชบอร์ดที่มองเห็นการเปลี่ยนแปลงทันที"
+
+#: superset/views/dashboard/mixin.py:57
+msgid "To get a readable URL for your dashboard"
+msgstr "เพื่อรับ URL ที่อ่านได้สำหรับแดชบอร์ดของคุณ"
+
+#: superset/views/dashboard/mixin.py:58
+msgid ""
+"This JSON object is generated dynamically when clicking the save or "
+"overwrite button in the dashboard view. It is exposed here for reference "
+"and for power users who may want to alter specific parameters."
+msgstr ""
+"วัตถุ JSON นี้ถูกสร้างขึ้นแบบไดนามิกเมื่อคลิกปุ่มบันทึกหรือเขียนทับในมุมมองแดชบอร์ด "
+"มันถูกเปิดเผยที่นี่สำหรับการอ้างอิงและสำหรับผู้ใช้พลังงานที่อาจต้องการเปลี่ยนพารามิเตอร์เฉพาะ"
+
+#: superset/views/dashboard/mixin.py:64
+msgid "Owners is a list of users who can alter the dashboard."
+msgstr "เจ้าของเป็นรายชื่อผู้ใช้ที่สามารถเปลี่ยนแดชบอร์ดได้"
+
+#: superset/views/dashboard/mixin.py:65
+msgid ""
+"Roles is a list which defines access to the dashboard. Granting a role "
+"access to a dashboard will bypass dataset level checks.If no roles are "
+"defined, regular access permissions apply."
+msgstr ""
+"บทบาทเป็นรายการที่กำหนดการเข้าถึงแดชบอร์ด "
+"การให้การเข้าถึงบทบาทของแดชบอร์ดจะข้ามการตรวจสอบระดับชุดข้อมูลหากไม่มีการกำหนดบทบาทการอนุญาตการเข้าถึงปกติ"
+
+#: superset/views/dashboard/mixin.py:70
+msgid ""
+"Determines whether or not this dashboard is visible in the list of all "
+"dashboards"
+msgstr "กำหนดว่าแดชบอร์ดนี้จะปรากฏในรายการแดชบอร์ดทั้งหมดหรือไม่"
+
+#: superset/views/dashboard/mixin.py:77 superset/views/dashboard/views.py:186
+msgid "Dashboard"
+msgstr "แผงหน้าปัด"
+
+#: superset/views/dashboard/mixin.py:78 superset/views/dashboard/views.py:187
+msgid "Title"
+msgstr "ชื่อ"
+
+#: superset/views/dashboard/mixin.py:79
+msgid "Slug"
+msgstr "กระสุน"
+
+#: superset/views/dashboard/mixin.py:82
+msgid "Roles"
+msgstr "บทบาท"
+
+#: superset/views/dashboard/mixin.py:83
+msgid "Published"
+msgstr "ที่ตีพิมพ์"
+
+#: superset/views/dashboard/mixin.py:86
+msgid "Position JSON"
+msgstr "ตำแหน่ง JSON"
+
+#: superset/views/dashboard/mixin.py:87
+msgid "CSS"
+msgstr "CSS"
+
+#: superset/views/dashboard/mixin.py:88
+msgid "JSON Metadata"
+msgstr "ข้อมูลเมตา JSON"
+
+#: superset/views/database/mixins.py:33
+msgid "Databases"
+msgstr "ฐานข้อมูล"
+
+#: superset/views/database/mixins.py:34
+msgid "Show Database"
+msgstr "แสดงฐานข้อมูล"
+
+#: superset/views/database/mixins.py:35
+msgid "Add Database"
+msgstr "เพิ่มฐานข้อมูล"
+
+#: superset/views/database/mixins.py:36
+msgid "Edit Database"
+msgstr "แก้ไขฐานข้อมูล"
+
+#: superset/views/database/mixins.py:103
+msgid "Expose this DB in SQL Lab"
+msgstr "เปิดเผย db นี้ใน SQL Lab"
+
+#: superset/views/database/mixins.py:104
+msgid ""
+"Operate the database in asynchronous mode, meaning that the queries are "
+"executed on remote workers as opposed to on the web server itself. This "
+"assumes that you have a Celery worker setup as well as a results backend. "
+"Refer to the installation docs for more information."
+msgstr ""
+"ใช้งานฐานข้อมูลในโหมดอะซิงโครนัสซึ่งหมายความว่าแบบสอบถามจะถูกดำเนินการกับพนักงานระยะไกลเมื่อเทียบกับเว็บเซิร์ฟเวอร์เอง "
+"นี่ถือว่าคุณมีการตั้งค่าคนงานคื่นฉ่ายรวมถึงแบ็กเอนด์ผลลัพธ์ อ้างถึงเอกสารการติดตั้งสำหรับข้อมูลเพิ่มเติม"
+
+#: superset/views/database/mixins.py:112
+msgid "Allow CREATE TABLE AS option in SQL Lab"
+msgstr "อนุญาตให้สร้างตารางเป็นตัวเลือกใน SQL Lab"
+
+#: superset/views/database/mixins.py:113
+msgid "Allow CREATE VIEW AS option in SQL Lab"
+msgstr "อนุญาตให้สร้างมุมมองเป็นตัวเลือกใน SQL Lab"
+
+#: superset/views/database/mixins.py:114
+msgid ""
+"Allow users to run non-SELECT statements (UPDATE, DELETE, CREATE, ...) in "
+"SQL Lab"
+msgstr "อนุญาตให้ผู้ใช้เรียกใช้คำสั่งที่ไม่ได้เลือก (อัปเดตลบสร้าง ... ) ใน SQL Lab"
+
+#: superset/views/database/mixins.py:119
+msgid ""
+"When allowing CREATE TABLE AS option in SQL Lab, this option forces the "
+"table to be created in this schema"
+msgstr ""
+"เมื่ออนุญาตให้สร้างตารางเป็นตัวเลือกใน SQL Lab ตัวเลือกนี้จะบังคับให้ตารางที่จะสร้างในสคีมานี้"
+
+#: superset/views/database/mixins.py:169
+msgid ""
+"If Presto, all the queries in SQL Lab are going to be executed as the "
+"currently logged on user who must have permission to run them.<br/>If Hive "
+"and hive.server2.enable.doAs is enabled, will run the queries as service "
+"account, but impersonate the currently logged on user via "
+"hive.server2.proxy.user property."
+msgstr ""
+"หาก Presto การสอบถามทั้งหมดใน SQL Lab "
+"จะถูกดำเนินการตามที่เข้าสู่ระบบผู้ใช้ในปัจจุบันที่จะต้องได้รับอนุญาตให้เรียกใช้ <br/> หาก Hive "
+"และ Hive.server2.enable.doas เปิดใช้งานจะเปิดใช้งานการสอบถามเป็นบัญชีบริการ"
+
+#: superset/views/database/mixins.py:176
+msgid ""
+"Duration (in seconds) of the caching timeout for charts of this database. A "
+"timeout of 0 indicates that the cache never expires. Note this defaults to "
+"the global timeout if undefined."
+msgstr ""
+"ระยะเวลา (ในวินาที) ของการหมดเวลาแคชสำหรับแผนภูมิของฐานข้อมูลนี้ การหมดเวลาของ 0 "
+"บ่งชี้ว่าแคชไม่เคยหมดอายุ หมายเหตุค่าเริ่มต้นนี้ไปยังการหมดเวลาทั่วโลกหากไม่ได้กำหนด"
+
+#: superset/views/database/mixins.py:181
+msgid "If selected, please set the schemas allowed for csv upload in Extra."
+msgstr "หากเลือกโปรดตั้งค่า schemas สำหรับการอัปโหลด CSV เป็นพิเศษ"
+
+#: superset/views/database/mixins.py:187
+msgid "Expose in SQL Lab"
+msgstr "เปิดเผยใน SQL Lab"
+
+#: superset/views/database/mixins.py:188
+msgid "Allow CREATE TABLE AS"
+msgstr "อนุญาตให้สร้างตารางเป็น"
+
+#: superset/views/database/mixins.py:189
+msgid "Allow CREATE VIEW AS"
+msgstr "อนุญาตให้สร้างมุมมองเป็น"
+
+#: superset/views/database/mixins.py:190
+msgid "Allow DDL/DML"
+msgstr "อนุญาต DDL/DML"
+
+#: superset/views/database/mixins.py:191
+msgid "CTAS Schema"
+msgstr "CTAS Schema"
+
+#: superset/views/database/mixins.py:195
+msgid "SQLAlchemy URI"
+msgstr "sqlalchemy uri"
+
+#: superset/views/database/mixins.py:196
+msgid "Chart Cache Timeout"
+msgstr "แผนภูมิหมดหมดเวลา"
+
+#: superset/views/database/mixins.py:198
+msgid "Secure Extra"
+msgstr "ปลอดภัยพิเศษ"
+
+#: superset/views/database/mixins.py:199
+msgid "Root certificate"
+msgstr "ใบรับรองรูท"
+
+#: superset/views/database/mixins.py:200
+msgid "Async Execution"
+msgstr "การดำเนินการ async"
+
+#: superset/views/database/mixins.py:201
+msgid "Impersonate the logged on user"
+msgstr "เลียนแบบผู้ใช้ที่เข้าสู่ระบบ"
+
+#: superset/views/database/mixins.py:202
+msgid "Allow Csv Upload"
+msgstr "อนุญาตให้อัปโหลด CSV"
+
+#: superset/views/database/mixins.py:204
+msgid "Backend"
+msgstr "แบ็กเอนด์"
+
+#: superset/views/database/mixins.py:262 superset/views/database/mixins.py:284
+#, python-format
+msgid "Extra field cannot be decoded by JSON. %(msg)s"
+msgstr "JSON ไม่สามารถถอดรหัสฟิลด์พิเศษได้ %(msg)s"
+
+#: superset/views/database/validators.py:40
+msgid ""
+"Invalid connection string, a valid string usually follows:'DRIVER://"
+"USER:PASSWORD@DB-HOST/DATABASE-NAME'<p>Example:'postgresql://"
+"user:password@your-postgres-db/database'</p>"
+msgstr ""
+"สตริงการเชื่อมต่อที่ไม่ถูกต้องสตริงสตริงที่ถูกต้องมักจะตามมา: 'ไดรเวอร์: // ผู้ใช้: รหัสผ่าน@db-"
+"host/database-name' <p> ตัวอย่าง: 'postgreSql: // ผู้ใช้: รหัสผ่าน@your-postgres-"
+"db/database' </p>"
+
+#: superset/views/datasource/views.py:76
+msgid "Request missing data field."
+msgstr "ขอช่องข้อมูลที่หายไป"
+
+#: superset/views/datasource/views.py:113
+#, python-format
+msgid "Duplicate column name(s): %(columns)s"
+msgstr "ชื่อคอลัมน์ที่ซ้ำกัน: %(columns)s"
+
+#: superset/views/log/__init__.py:21
+msgid "Logs"
+msgstr "ท่อนไม้"
+
+#: superset/views/log/__init__.py:22
+msgid "Show Log"
+msgstr "แสดงบันทึก"
+
+#: superset/views/log/__init__.py:23
+msgid "Add Log"
+msgstr "เพิ่มบันทึก"
+
+#: superset/views/log/__init__.py:24
+msgid "Edit Log"
+msgstr "แก้ไขบันทึก"
+
+#: superset/views/log/__init__.py:30
+msgid "User"
+msgstr "ผู้ใช้"
+
+#: superset/views/log/__init__.py:31
+msgid "Action"
+msgstr "การกระทำ"
+
+#: superset/views/log/__init__.py:32
+msgid "dttm"
+msgstr "DTTM"
+
+#: superset/views/log/__init__.py:33
+msgid "JSON"
+msgstr "JSON"
