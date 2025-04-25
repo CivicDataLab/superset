@@ -238,14 +238,15 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
             cond=lambda: bool(appbuilder.app.config["LOGO_TARGET_PATH"]),
         )
 
-        # appbuilder.add_view(
-        #     DatabaseView,
-        #     "Databases",
-        #     label=__("Database Connections"),
-        #     icon="fa-database",
-        #     category="Data",
-        #     category_label=__("Data"),
-        # )
+        appbuilder.add_view(
+            DatabaseView,
+            "Databases",
+            label=__("Database Connections"),
+            icon="fa-database",
+            category="Data",
+            category_label=__("Data"),
+        )
+
         # appbuilder.add_view(
         #     DashboardModelView,
         #     "Dashboards",
@@ -254,6 +255,7 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
         #     category="",
         #     category_icon="",
         # )
+
         # appbuilder.add_view(
         #     SliceModelView,
         #     "Charts",
