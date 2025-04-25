@@ -1,56 +1,76 @@
-{#
-  Licensed to the Apache Software Foundation (ASF) under one
-  or more contributor license agreements.  See the NOTICE file
-  distributed with this work for additional information
-  regarding copyright ownership.  The ASF licenses this file
-  to you under the Apache License, Version 2.0 (the
-  "License"); you may not use this file except in compliance
-  with the License.  You may obtain a copy of the License at
+{# Licensed to the Apache Software Foundation (ASF) under one or more
+contributor license agreements. See the NOTICE file distributed with this work
+for additional information regarding copyright ownership. The ASF licenses this
+file to you under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License. You may obtain a copy of
+the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+applicable law or agreed to in writing, software distributed under the License
+is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License. #} {% extends
+'appbuilder/init.html' %} {% import 'appbuilder/baselib.html' as baselib %} {%
+block body %} {% include 'appbuilder/general/confirm.html' %} {% include
+'appbuilder/general/alert.html' %} {% block navbar %} {% include
+'appbuilder/navbar.html' %} {% endblock %} {% block uncontained %}{% endblock %}
 
-    http://www.apache.org/licenses/LICENSE-2.0
+<div class="container">
+  <div class="row">
+    {% block messages %} {% include 'superset/flash_wrapper.html' %} {% endblock
+    %} {% block content %} {% endblock %}
+  </div>
+</div>
+<div class="container-fluid">{% block content_fluid %} {% endblock %}</div>
+<div id="app" data-bootstrap="{{ bootstrap_data() }}"></div>
 
-  Unless required by applicable law or agreed to in writing,
-  software distributed under the License is distributed on an
-  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-  KIND, either express or implied.  See the License for the
-  specific language governing permissions and limitations
-  under the License.
-#}
-{% extends 'appbuilder/init.html' %}
-{% import 'appbuilder/baselib.html' as baselib %}
+{% block footer %}
+<footer>
+  <div class="img-rounded nav-fixed-bottom">
+    <div class="container-fluid">{% include 'appbuilder/footer.html' %}</div>
+  </div>
+</footer>
+{% endblock %}
 
-{% block body %}
-    {% include 'appbuilder/general/confirm.html' %}
-    {% include 'appbuilder/general/alert.html' %}
+<!-- 🔽 Add div to inject Google Translate for Dashboard using the language dropdown in the Header -->
+<div
+  id="google_translate_element"
+  style="position: fixed; bottom: 10px; right: 10px; z-index: 9999"
+></div>
 
-    {% block navbar %}
-      {% include 'appbuilder/navbar.html' %}
-    {% endblock %}
+<script type="text/javascript">
+  function autoSelectGoogleTranslateLang() {
+    const userLang = document.cookie.match(/language=([^;]+)/);
+    const lang = userLang ? userLang[1] : "en";
 
-    {% block uncontained %}{% endblock %}
+    const langMap = {
+      en: "en",
+      th: "th",
+    };
 
-    <div class="container">
-      <div class="row">
-          {% block messages %}
-            {% include 'superset/flash_wrapper.html' %}
-          {% endblock %}
-          {% block content %}
-          {% endblock %}
-      </div>
-    </div>
-    <div class="container-fluid">
-        {% block content_fluid %}
-        {% endblock %}
-    </div>
-    <div id="app" data-bootstrap="{{ bootstrap_data() }}"></div>
+    const googleLang = langMap[lang] || "en";
 
-    {% block footer %}
-        <footer>
-          <div class="img-rounded nav-fixed-bottom">
-              <div class="container-fluid">
-                  {% include 'appbuilder/footer.html' %}
-              </div>
-          </div>
-        </footer>
-    {% endblock %}
+    const interval = setInterval(() => {
+      const select = document.querySelector(".goog-te-combo");
+      if (select) {
+        select.value = googleLang;
+        select.dispatchEvent(new Event("change"));
+        clearInterval(interval);
+      }
+    }, 500);
+  }
+
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        includedLanguages: "en,th",
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      },
+      "google_translate_element"
+    );
+
+    autoSelectGoogleTranslateLang();
+  }
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 {% endblock %}
