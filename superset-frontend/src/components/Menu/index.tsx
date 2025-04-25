@@ -101,7 +101,7 @@ const StyledNav = styled(AntdMenu)`
 
   & > .ant-menu-item,
   & > .ant-menu-submenu {
-    vertical-align: inherit;
+    vertical-align: text-top;
     &:hover {
       color: ${({ theme }) => theme.colors.grayscale.dark1};
     }
