@@ -40,7 +40,7 @@ block body %} {% include 'appbuilder/general/confirm.html' %} {% include
   function autoSelectGoogleTranslateLang() {
     const userLang = document.cookie.match(/language=([^;]+)/);
     const lang = userLang ? userLang[1] : "en";
-
+    console.log("lang selected ::::::: ", lang);
     const langMap = {
       en: "en",
       th: "th",
@@ -52,6 +52,7 @@ block body %} {% include 'appbuilder/general/confirm.html' %} {% include
       const select = document.querySelector(".goog-te-combo");
       if (select) {
         select.value = googleLang;
+        console.log("Inside interval");
         select.dispatchEvent(new Event("change"));
         clearInterval(interval);
       }
@@ -68,9 +69,11 @@ block body %} {% include 'appbuilder/general/confirm.html' %} {% include
       "google_translate_element"
     );
 
+    console.log("googleTranslateElementInit");
+
     autoSelectGoogleTranslateLang();
   }
 </script>
 
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 {% endblock %}
