@@ -135,8 +135,8 @@ const defaultTheme = {
   typography: {
     families: {
       sansSerif: `Anuphan`,
-      serif: `Georgia, 'Times New Roman', Times, serif`,
-      monospace: `'Fira Code', 'Courier New', monospace`,
+      serif: `Anuphan`,
+      monospace: `Anuphan`,
     },
     weights: {
       light: 200,
