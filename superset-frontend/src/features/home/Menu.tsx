@@ -110,6 +110,9 @@ const StyledHeader = styled.header`
       .ant-menu-horizontal .ant-menu-item {
         height: 100%;
         line-height: inherit;
+        position: relative;
+        top: 10px;
+        display: inline-block;
       }
       .ant-menu > .ant-menu-item > a {
         padding: ${theme.gridUnit * 4}px;
